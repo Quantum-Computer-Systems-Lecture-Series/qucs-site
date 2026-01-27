@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/BlogCard.astro'
+import { getCollection } from 'astro:content'
+import { SITE_BASE } from '../../../consts'
+import { getCategoryLabel } from '@/utils/categoryLabels'
+
+export const prerender = true
+
+export async function getStaticPaths() {
+	const allLectures = await getCollection('lectures', ({ data }) => {
+		// Only show public lectures in category listings
+		return data.visibility === 'public'
+	})
+	const categories = [...new Set(allLectures.map((lecture) => lecture.data.category).filter(Boolean))]
+
+	return categories.map((category) => ({
+		params: { category: encodeURIComponent(category) },
+		props: {
+			category: category,
+			lectures: allLectures
+				.filter((lecture) => lecture.data.category === category)
+				.sort((a, b) => b.data.lectureDate.valueOf() - a.data.lectureDate.valueOf()),
+		},
+	}))
+}
+
+const { category } = Astro.props
+const { lectures } = Astro.props
+const categoryLabel = getCategoryLabel(category)
+---
+
+<BaseLayout
+	title={`${categoryLabel} Lectures`}
+	description={`Browse all ${categoryLabel} lectures`}
+>
+	<main class="app-container py-36 md:py-48 pt-44 md:pt-56">
+		<div class="mb-12">
+			<a
+				href={`${SITE_BASE}/lectures`}
+				class="text-primary dark:text-primary-dark hover:underline mb-4 inline-block"
+			>
+				← Back to all lectures
+			</a>
+			<h1 class="text-6xl font-bold mb-4">
+				{categoryLabel}
+			</h1>
+			<p class="text-xl opacity-70">
+				{lectures.length} {lectures.length === 1 ? 'lecture' : 'lectures'} in this category
+			</p>
+		</div>
+
+		<div class="posts-grid-container">
+			{lectures.map((lecture) => <BlogCard post={lecture} />)}
+		</div>
+	</main>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+title: '58 | Variational Quantum Semi-definite Programming'
+description: >-
+  Solving optimization problems is a key task for which quantum computers could possibly provide a speedup over the best known classical algorithms.
+speaker: Mark Wilde
+speakerAffiliation: Cornell
+speakerBio: >-
+  Mark M. Wilde received the Ph.D. degree in electrical engineering from the University of Southern California, Los Angeles, California. He is an Associate Professor of Electrical and Computer Engineering at Cornell University. He is an IEEE Fellow, he is a recipient of the National Science Foundation Career Development Award, he is a co-recipient of the 2018 AHP-Birkhauser Prize, awarded to “the most remarkable contribution” published in the journal Annales Henri Poincare, and he is an Outstanding Referee of the American Physical Society. His current research interests are in quantum Shannon theory, quantum computation, quantum optical communication, quantum computational complexity theory, and quantum error correction.
+lectureDate: 2024-11-09
+links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=J3TTcTVnAAk
+    type: youtube
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - MarkMWilde
+  - Quantum
+  - Algorithm
+  - Optimization
+  - Simulation
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+Solving optimization problems is a key task for which quantum computers could possibly provide a speedup over the best known classical algorithms. Particular classes of optimization problems including semi-definite programming (SDP) have wide applicability in many domains of computer science, engineering, mathematics, and physics. In this talk, I will present a brief overview of semi-definite programs, and then I will present the QSlack method for estimating their optimal values. This method works by 1) introducing slack variables to transform inequality constraints to equality constraints, 2) transforming a constrained optimization to an unconstrained one via the penalty method, and 3) replacing the optimizations over all possible semi-definite operators by optimizations over parameterized quantum states. Under the assumption that the SDP inputs are efficiently measurable observables, it follows that all terms in the resulting objective functions are efficiently estimable by a quantum computer. Furthermore, by making use of SDP duality theory, it follows that this method provides a theoretical guarantee that, if one could find global optima of the objective functions, then the resulting values sandwich the true optimal values from both above and below. As applied to the variational quantum eigensolver (VQE) problem, our method gives a way to lower bound the ground-state energy, as a quality check on the upper bound found by the traditional VQE method. Finally, I will showcase the results of numerical simulations of the QSlack method on some example optimization problems.  This is joint work with Hanna Westerheim, Jingxuan Chen, Zoë Holmes, Ivy Luo, Theshani Nuradha, Dhrumil Patel, Soorya Rethinasamy, and Kathie Wang, and available as https://arxiv.org/abs/2312.03083 and https://arxiv.org/abs/2312.03830Bio: Contact the speaker:
+
+
+## Speaker Bio
+
+Mark M. Wilde received the Ph.D. degree in electrical engineering from the University of Southern California, Los Angeles, California. He is an Associate Professor of Electrical and Computer Engineering at Cornell University. He is an IEEE Fellow, he is a recipient of the National Science Foundation Career Development Award, he is a co-recipient of the 2018 AHP-Birkhauser Prize, awarded to “the most remarkable contribution” published in the journal Annales Henri Poincare, and he is an Outstanding Referee of the American Physical Society. His current research interests are in quantum Shannon theory, quantum computation, quantum optical communication, quantum computational complexity theory, and quantum error correction.

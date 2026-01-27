@@ -1,0 +1,30 @@
+welcomeText: Join the
+heading: QuCS Community
+subheading: Your quantum community hub for learning, collaboration, and career growth.
+discordUrl: https://tinyurl.com/qucs-dc
+offerings:
+  - title: Knowledge-Sharing
+    description: >-
+      Combines educational resources, research papers, and practical
+      implementations in one interconnected system. Features curated learning
+      paths that seamlessly bridge theoretical concepts with their research
+      applications.
+  - title: Problem-Solving
+    description: >-
+      Brings together researchers, industry professionals, and learners to
+      tackle real quantum computing challenges. Creates an ecosystem where
+      problems encountered in practice directly influence research directions.
+  - title: Career-Developing
+    description: >-
+      Builds clear pathways from learning to professional opportunities in
+      quantum computing. Connects students with mentors, researchers with
+      collaborators, and practitioners with employers.
+connectTitle: Connect with us
+connectText: >-
+  Join our Discord community to connect with fellow quantum computing
+  enthusiasts, researchers, and learners. Ask questions, share insights, and
+  stay updated on the latest developments.
+involvedTitle: Get involved
+involvedText: >-
+  Whether you're just starting your quantum journey or you're an experienced
+  researcher, there's a place for you in our community.

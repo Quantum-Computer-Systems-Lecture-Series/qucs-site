@@ -1,0 +1,205 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import FormattedDate from '../components/FormattedDate.astro'
+import type { MarkdownHeading, ImageMetadata } from 'astro'
+import TableOfContents from '../components/TableOfContents.astro'
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+
+dayjs.extend(utc)
+
+type Props = CollectionEntry<'lectures'>['data'] & {
+	headings: MarkdownHeading[]
+	slug: string
+	remarkPluginFrontmatter: Record<string, string>
+}
+
+const {
+	title,
+	description,
+	lectureDate,
+	updatedDate,
+	category,
+	tags,
+	useMathJax,
+	links,
+	speakerEmail,
+	headings,
+	slug,
+	remarkPluginFrontmatter,
+} = Astro.props
+
+const displayDate = lectureDate
+
+import BaseLayout from './BaseLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { SITE_BASE } from '../consts'
+import { getCategoryLabel } from '../utils/categoryLabels'
+
+const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
+	.utc()
+	.format('D MMM YYYY')
+
+// Extract YouTube video ID from links
+function getYouTubeId(url: string): string | null {
+	const patterns = [
+		/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/,
+		/youtube\.com\/embed\/([^&?/]+)/
+	]
+	for (const pattern of patterns) {
+		const match = url.match(pattern)
+		if (match) return match[1]
+	}
+	return null
+}
+
+const youtubeLink = links?.find((link: { type: string; url: string }) => link.type === 'youtube')
+const youtubeId = youtubeLink ? getYouTubeId(youtubeLink.url) : null
+---
+
+<BaseLayout title={title} description={description} useMathJax={useMathJax}>
+	<main>
+		<article>
+			<div
+				class="app-container flex flex-col lg:flex-row-reverse justify-between gap-8 py-24 relative"
+			>
+				<div class="md:w-1/4 relative">
+					<div class="sticky top-0 md:top-28 hidden lg:block">
+						<TableOfContents headings={headings} />
+					</div>
+				</div>
+				<div class="grow w-full md:max-w-[75ch]">
+					<div>
+						<h1 class="text-4xl sm:text-5xl leading-snug pt-12 font-bold">
+							{title}
+						</h1>
+
+						<!-- Category and Tags -->
+						{(category || (tags && tags.length > 0)) && (
+							<div class="flex flex-wrap gap-3 items-center py-6">
+								{category && (
+									<a
+										href={`${SITE_BASE}/lectures/category/${category}`}
+										class="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark rounded-full text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary-dark/20 transition-colors"
+									>
+										{getCategoryLabel(category)}
+									</a>
+								)}
+								{tags && tags.length > 0 && (
+									<div class="flex flex-wrap gap-2">
+										{tags.map((tag: string) => (
+											<a
+												href={`${SITE_BASE}/lectures/tag/${tag}`}
+												class="text-sm opacity-60 hover:opacity-100 hover:underline transition-opacity"
+											>
+												#{tag}
+											</a>
+										))}
+									</div>
+								)}
+							</div>
+						)}
+
+						<div class="text-lg flex items-center gap-4 flex-wrap py-8">
+							<!-- Publish date -->
+							<span>
+								<Icon
+									name="mdi:calendar-month-outline"
+									class="inline-block text-primary dark:text-primary-dark"
+								/>
+								<FormattedDate date={displayDate} />
+							</span>
+
+							<!-- Updated date -->
+							{
+								updatedDate && (
+									<span>
+										<Icon
+											name="mdi:calendar-refresh-outline"
+											class="inline-block text-primary dark:text-primary-dark"
+										/>
+										Last updated on <FormattedDate date={updatedDate} />
+									</span>
+								)
+							}
+
+							<!-- Read time -->
+							<span>
+								<Icon
+									name="mdi:clock-time-four-outline"
+									class="inline-block text-primary dark:text-primary-dark"
+								/>
+								{remarkPluginFrontmatter.minutesRead}
+							</span>
+						</div>
+
+						<!-- Resource Links (Slides, Videos, etc.) -->
+						{(links && links.length > 0 || speakerEmail) && (
+							<div class="flex gap-3 flex-wrap mb-8">
+								{links && links.map((link: { label: string; url: string; type: 'slides' | 'youtube' | 'bilibili' | 'other' }) => (
+									<a
+										href={link.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn-secondary"
+									>
+										{link.type === 'slides' && <Icon name="mdi:presentation" class="w-5 h-5" />}
+										{link.type === 'youtube' && <Icon name="mdi:youtube" class="w-5 h-5" />}
+										{link.type === 'bilibili' && <Icon name="mdi:video" class="w-5 h-5" />}
+										{link.type === 'other' && <Icon name="mdi:link" class="w-5 h-5" />}
+										{link.label}
+									</a>
+								))}
+								{speakerEmail && (
+									<a
+										href={`mailto:${speakerEmail}`}
+										class="btn-secondary"
+									>
+										<Icon name="mdi:email" class="w-5 h-5" />
+										Contact Speaker
+									</a>
+								)}
+							</div>
+						)}
+
+						<!-- YouTube Video Embed -->
+						{youtubeId && (
+							<div class="mb-8">
+								<div class="relative w-full" style="padding-bottom: 56.25%;">
+									<iframe
+										class="absolute top-0 left-0 w-full h-full rounded-lg"
+										src={`https://www.youtube.com/embed/${youtubeId}`}
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						)}
+					</div>
+					<div
+						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
+					>
+						<slot />
+					</div>
+
+					<!-- Suggest edit -->
+					<div class="flex justify-between mt-16 gap-4 flex-wrap italic">
+						<a
+							href={`https://github.com/HisenZhang/qucs-site/edit/master/src/content/lectures/${slug}.mdoc`}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="hover:underline underline-offset-4 opacity-70 hover:opacity-100"
+							><Icon name="mdi:pencil-outline" class="inline-block" />
+							Suggest an edit
+						</a>
+						<p class="opacity-70">
+							Last modified: {lastModified}
+						</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+</BaseLayout>

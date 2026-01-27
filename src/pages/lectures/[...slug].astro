@@ -1,0 +1,45 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content'
+import BlogPostLayout from '../../layouts/BlogPostLayout.astro'
+import type { MarkdownHeading } from 'astro'
+import getReadingTime from 'reading-time'
+
+export const prerender = true
+
+export async function getStaticPaths() {
+	const lectures = await getCollection('lectures', ({ data }) => {
+		return data.visibility === 'public' || data.visibility === 'unlisted'
+	})
+	const headings = await Promise.all(
+		lectures.map(async (lecture) => {
+			const data = await lecture.render()
+			return data.headings
+		})
+	)
+	return lectures.map((lecture, index) => ({
+		params: { slug: lecture.slug },
+		props: { post: lecture, headings: headings[index], slug: lecture.slug },
+	}))
+}
+
+type Props = {
+	post: CollectionEntry<'lectures'>
+	headings: MarkdownHeading[]
+	slug: string
+}
+
+const { post, headings, slug } = Astro.props
+const { Content, remarkPluginFrontmatter } = await post.render()
+
+const readingTime = getReadingTime(post.body)
+const minutesRead = readingTime.text
+---
+
+<BlogPostLayout
+	{...post.data}
+	headings={headings}
+	slug={slug}
+	remarkPluginFrontmatter={{ ...remarkPluginFrontmatter, minutesRead }}
+>
+	<Content />
+</BlogPostLayout>

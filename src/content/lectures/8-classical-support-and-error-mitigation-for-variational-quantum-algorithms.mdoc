@@ -1,0 +1,39 @@
+---
+title: '8 | Classical Support and Error Mitigation for Variational Quantum Algorithms'
+description: >-
+  In this seminar Dr.
+speaker: Gokul Ravi
+speakerAffiliation: UChicago
+speakerBio: >-
+  Dr. Gokul Ravi is a 2020 NSF Computing Innovation Fellow postdoc at the University of Chicago. His research targets classically inspired innovations for quantum computing and is mentored by Prof. Fred Chong. He received his PhD in Computer Architecture from UW-Madison in 2020 and was advised by Prof. Mikko Lipasti. During his PhD he was awarded the 2020 Best ECE Dissertation Award and recognized as a 2019 Rising Star in Computer Architecture.
+lectureDate: 2022-08-29
+links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=SO_-DBeH6eo
+    type: youtube
+  - label: Bilibili
+    url: https://www.bilibili.com/video/BV1WG411571D/?spm_id_from=333.999.0.0
+    type: bilibili
+  - label: Materials
+    url: https://github.com/Hanrui-Wang/quantum-computer-systems-lectures/blob/main/QuCS8-Gokul Ravi.pdf
+    type: slides
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - GokulRavi
+  - Quantum
+  - Algorithm
+  - Optimization
+  - Hardware
+  - Simulation
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+In this seminar Dr. Ravi will talk about Variational Quantum Algorithms (VQAs) and two proposals to improve their quality of execution on NISQ devices. First, Dr.Ravi will discuss VAQEM, which dynamically tailors existing error mitigation techniques to the actual, dynamic noisy execution characteristics of VQAs on a target quantum machine. This is done by tuning specific features of these mitigation techniques similar to VQAs’ traditional rotation angle parameters. In this work, we target two types of error mitigation techniques which are suited to idle times in quantum circuits: single qubit gate scheduling and the insertion of dynamical decoupling sequences.  Second, Dr.Ravi will discuss finding a good ansatz initialization for VQAs through CAFQA, a Clifford Ansatz For Quantum Accuracy. The CAFQA ansatz is a hardware-efficient circuit built with only Clifford gates. In this ansatz, the parameters for the tunable gates are chosen by searching efficiently through the Clifford parameter space via classical simulation. The resulting initial states always equal or outperform traditional classical initialization and enable high-accuracy VQA estimations. CAFQA is well-suited to classical computation because: a) Clifford-only quantum circuits can be exactly simulated classically in polynomial time, and b) the discrete Clifford space is searched efficiently via Bayesian Optimization.
+
+
+## Speaker Bio
+
+Dr. Gokul Ravi is a 2020 NSF Computing Innovation Fellow postdoc at the University of Chicago. His research targets classically inspired innovations for quantum computing and is mentored by Prof. Fred Chong. He received his PhD in Computer Architecture from UW-Madison in 2020 and was advised by Prof. Mikko Lipasti. During his PhD he was awarded the 2020 Best ECE Dissertation Award and recognized as a 2019 Rising Star in Computer Architecture.

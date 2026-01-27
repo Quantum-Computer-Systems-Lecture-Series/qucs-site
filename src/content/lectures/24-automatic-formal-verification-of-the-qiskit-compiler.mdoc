@@ -1,0 +1,29 @@
+---
+title: '24 | Automatic Formal Verification of the Qiskit Compiler'
+description: >-
+  Quantum compilers are essential in the quantum software stack but are error-prone.
+speaker: Runzhou Tao
+speakerAffiliation: Columbia
+speakerBio: >-
+  Runzhou Tao is a fourth year Ph.D. student at the Department of Computer Science, Columbia University. He is advised by Prof. Ronghui Gu. His research focus on programming language and operating system support for quantum computing. He won best paper awards from conferences such as FOCS and OSDI. He received his Bachelor’s degree from Yao Class at Tsinghua University in 2019.
+lectureDate: 2023-01-16
+links: []
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - RunzhouTao
+  - Quantum
+  - Compilation
+  - Software
+  - Verification
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+Quantum compilers are essential in the quantum software stack but are error-prone. Elliminating bugs in quantum compilers is crucial for the success of near-term quantum computation. In this talk, we presents Giallar, a fully-automated verification toolkit for quantum compilers to formally prove that the compiler is bug-free. Giallar requires no manual specifications, invariants, or proofs, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers, Giallar abstracts three loop templates, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation, Giallar introduces a symbolic representation for quantum circuits and a set of rewrite rules for showing the equivalence of symbolic quantum circuits. With Giallar, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler, the open-source quantum compiler standard, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.
+
+
+## Speaker Bio
+
+Runzhou Tao is a fourth year Ph.D. student at the Department of Computer Science, Columbia University. He is advised by Prof. Ronghui Gu. His research focus on programming language and operating system support for quantum computing. He won best paper awards from conferences such as FOCS and OSDI. He received his Bachelor’s degree from Yao Class at Tsinghua University in 2019.

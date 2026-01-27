@@ -1,0 +1,33 @@
+---
+title: '26 | Abstractions Are Bridges Toward Quantum Programming'
+description: >-
+  In this talk, I present abstractions that help classical developers reason about the quantum world, with the goal of designing expressive and sound tools for quantum programming.
+speaker: Charles Yuan
+speakerAffiliation: MIT
+speakerBio: >-
+  Charles Yuan is a Ph.D. student at MIT working with Michael Carbin whose research interests lie in programming languages for the computer systems of tomorrow and who is currently investigating programming abstractions for quantum systems.
+lectureDate: 2023-02-16
+links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=wLvEYG9mL20
+    type: youtube
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - CharlesYuan
+  - Quantum
+  - Algorithm
+  - Simulation
+  - Benchmark
+  - Verification
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+In this talk, I present abstractions that help classical developers reason about the quantum world, with the goal of designing expressive and sound tools for quantum programming. First, I present Tower, a language to enable quantum programming with data structures, on which emerging quantum algorithms rely to demonstrate computational advantage. To correctly operate in superposition, a data structure must satisfy three properties — reversibility, history independence, and bounded-time execution. Standard implementations, such as the representation of a set as a hash table, fail these properties, calling for tools to develop specialized implementations. We present Tower, a language that enables the developer to implement data structures as pointer-based, linked data, and Boson, the first memory allocator that supports reversible, history-independent, and constant-time dynamic memory allocation in quantum superposition. Using them, we implement Ground, the first quantum library of data structures, featuring an executable and efficient implementation of sets. Next, I present Twist, the first language that features a type system for sound reasoning about entanglement. Entanglement, the phenomenon of correlated measurement outcomes, can determine the correctness of algorithms and suitability of programming patterns. Twist leverages purity, a property of an expression that implies freedom from entanglement from the rest of the computation. It features a type system that enables the developer to identify pure expressions using type annotations and purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist’s type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5%.
+
+
+## Speaker Bio
+
+Charles Yuan is a Ph.D. student at MIT working with Michael Carbin whose research interests lie in programming languages for the computer systems of tomorrow and who is currently investigating programming abstractions for quantum systems.

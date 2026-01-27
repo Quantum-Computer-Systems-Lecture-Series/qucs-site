@@ -1,0 +1,35 @@
+---
+title: '23 | Software Tools for Analog Quantum Computing'
+description: >-
+  Recent experimental results suggest that continuous-time analog quantum simulation would be advantageous over gate-based digital quantum simulation in the Noisy Intermediate-Size Quantum (NISQ) machine era.
+speaker: Yuxiang Peng
+speakerAffiliation: University of Maryland
+speakerBio: >-
+  Yuxiang Peng is a PhD student at the Department of Computer Science, University of Maryland, College Park. He is also affiliated to the Joint Center for Quantum Information and Computer Science. He is currently advised by Prof. Xiaodi Wu. His research interests are broadly in programming languages, quantum computing and physics. He received his bachelor’s degrees from the Institute for Interdisciplinary Information Science and the Department of Mathematical Science, Tsinghua University, and his master’s degree from the Department of Computer Science, University of Maryland, College Park.
+lectureDate: 2023-01-15
+links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=LQRnstOW274
+    type: youtube
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - YuxiangPeng
+  - Quantum
+  - Algorithm
+  - Optimization
+  - Compilation
+  - Hardware
+  - Software
+  - Simulation
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+Recent experimental results suggest that continuous-time analog quantum simulation would be advantageous over gate-based digital quantum simulation in the Noisy Intermediate-Size Quantum (NISQ) machine era. However, programming such analog quantum simulators is much more challenging due to the lack of a unified interface between hardware and software, and the only few known examples are all hardware-specific. In our talk, we will introduce two tools designed for better programming and controlling analog quantum simulators. First, we design and implement SimuQ, the first domain-specific language for Hamiltonian simulation that supports pulse-level compilation to heterogeneous analog quantum simulators. Specifically, in SimuQ, front-end users will specify the target Hamiltonian evolution with Hamiltonian Modeling Language, and the programmability of analog simulators is specified through a new abstraction called the abstract analog instruction set by hardware providers. Through a solver-based compilation, SimuQ will generate the pulse-level instruction schedule on the target analog simulator for the desired Hamiltonian evolution, which has been demonstrated on pulse-controlled superconducting (Qiskit Pulse) and neutral-atom (QuEra Bloqade) quantum systems, as well as on normal circuit-based digital quantum machines. Second, we formulate the first differentiable analog quantum computing framework with specific parameterization design at the analog signal (pulse) level to better exploit near-term quantum devices via variational methods. We further propose a scalable approach to estimate the gradients of quantum dynamics using a forward pass with Monte Carlo sampling, which leads to a quantum stochastic gradient descent algorithm for scalable gradient-based training in our framework. Our method significantly boosts the performance of quantum optimization and quantum control and can be integrated into SimuQ seamlessly.
+
+
+## Speaker Bio
+
+Yuxiang Peng is a PhD student at the Department of Computer Science, University of Maryland, College Park. He is also affiliated to the Joint Center for Quantum Information and Computer Science. He is currently advised by Prof. Xiaodi Wu. His research interests are broadly in programming languages, quantum computing and physics. He received his bachelor’s degrees from the Institute for Interdisciplinary Information Science and the Department of Mathematical Science, Tsinghua University, and his master’s degree from the Department of Computer Science, University of Maryland, College Park.

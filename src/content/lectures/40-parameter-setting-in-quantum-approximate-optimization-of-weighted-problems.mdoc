@@ -1,0 +1,34 @@
+---
+title: '40 | Parameter Setting in Quantum Approximate Optimization of Weighted Problems'
+description: >-
+  Quantum Approximate Optimization Algorithm (QAOA) is a leading candidate algorithm for solving combinatorial optimization problems on quantum computers.
+speaker: Ruslan Shaydulin
+speakerAffiliation: JPMorgan
+speakerBio: >-
+  Ruslan Shaydulin is an Applied Research Lead at the Global Technology Applied Research center at JPMorgan Chase. Ruslan’s research centers on applying quantum algorithms to classical problems, with a focus on optimization and machine learning. Prior to joining JPMorgan Chase, Ruslan was a Maria Goeppert Mayer fellow at Argonne National Laboratory.
+lectureDate: 2023-09-25
+links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=9f3lA1S3R1o
+    type: youtube
+  - label: Bilibili
+    url: https://www.bilibili.com/video/BV1V84y1U7Jj/?spm_id_from=333.999.0.0
+    type: bilibili
+coverImageUrl: ''
+category: algorithms-and-theory
+tags:
+  - RuslanShaydulin
+  - Quantum
+  - Algorithm
+  - Optimization
+visibility: public
+useMathJax: true
+---
+## Abstract
+
+Quantum Approximate Optimization Algorithm (QAOA) is a leading candidate algorithm for solving combinatorial optimization problems on quantum computers. However, in many cases QAOA requires computationally intensive parameter optimization. The challenge of parameter optimization is particularly acute in the case of weighted problems, for which the eigenvalues of the phase operator are non-integer and the QAOA energy landscape is not periodic. In this work, we develop parameter setting heuristics for QAOA applied to a general class of weighted problems. First,  we derive optimal parameters for QAOA with depth p = 1 applied to the weighted MaxCut problem under different assumptions on the weights. In particular, we rigorously prove the conventional wisdom that in the average case the first local optimum near zero gives globally-optimal QAOA parameters. Second, for p ≥ 1 we prove that the QAOA energy landscape for weighted MaxCut approaches that for the unweighted case under a simple rescaling of parameters. Therefore, we can use parameters previously obtained for unweighted MaxCut for weighted problems. Finally, we prove that for p = 1 the QAOA objective sharply concentrates around its expectation, which means that our parameter setting rules hold with high probability for a random weighted instance. We numerically validate this approach on a dataset of 34,701 weighted graphs with up to 20 nodes and show that the QAOA energy with the proposed fixed parameters is only 1.1 percentage points (p.p.) away from that with optimized parameters. Third, we propose a general heuristic rescaling scheme inspired by the analytical results for weighted MaxCut and demonstrate its effectiveness using QAOA with the XY Hamming-weight-preserving mixer applied to the portfolio optimization problem as an example. We show that our simple rule improves the convergence of local optimizers, reducing the number of iterations required to reach a fixed local minimum by 7.2x on average.
+
+
+## Speaker Bio
+
+Ruslan Shaydulin is an Applied Research Lead at the Global Technology Applied Research center at JPMorgan Chase. Ruslan’s research centers on applying quantum algorithms to classical problems, with a focus on optimization and machine learning. Prior to joining JPMorgan Chase, Ruslan was a Maria Goeppert Mayer fellow at Argonne National Laboratory.

@@ -1,0 +1,114 @@
+---
+export const prerender = true
+
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { createReader } from '@keystatic/core/reader'
+import keystaticConfig from '../../keystatic.config'
+
+const reader = createReader(process.cwd(), keystaticConfig)
+const communityData = await reader.singletons.community.read()
+
+const community = communityData || {
+	welcomeText: 'Join the',
+	heading: 'QuCS Community',
+	subheading: 'Your quantum community hub for learning, collaboration, and career growth.',
+	discordUrl: 'https://tinyurl.com/qucs-dc',
+	offerings: [
+		{
+			title: 'Knowledge-Sharing',
+			description: 'Combines educational resources, research papers, and practical implementations in one interconnected system.',
+		},
+		{
+			title: 'Problem-Solving',
+			description: 'Brings together researchers, industry professionals, and learners to tackle real quantum computing challenges.',
+		},
+		{
+			title: 'Career-Developing',
+			description: 'Builds clear pathways from learning to professional opportunities in quantum computing.',
+		},
+	],
+	connectTitle: 'Connect with us',
+	connectText: 'Join our Discord community to connect with fellow quantum computing enthusiasts, researchers, and learners.',
+	involvedTitle: 'Get involved',
+	involvedText: "Whether you're just starting your quantum journey or you're an experienced researcher, there's a place for you in our community.",
+}
+---
+
+<BaseLayout>
+	<main
+		class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
+	>
+		<div>
+			<p class="block text-3xl opacity-70 mt-9 mb-4">{community.welcomeText}</p>
+			<h1 class="text-8xl font-bold leading-none">{community.heading}</h1>
+		</div>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			{community.subheading}
+		</p>
+		<div class="flex flex-wrap gap-4">
+			<a
+				class="btn-primary"
+				href={community.discordUrl}
+				target="_blank"
+			>
+				Join Discord
+				<Icon height={20} name="mdi:discord" />
+			</a>
+		</div>
+	</main>
+
+	<!-- What QuCS Offers Section -->
+	<section class="app-container py-12">
+		<div class="grid md:grid-cols-3 gap-12">
+			{
+				community.offerings.map((offering) => (
+					<div class="space-y-3">
+						<h3 class="text-2xl font-semibold">{offering.title}</h3>
+						<p class="text-lg opacity-80">{offering.description}</p>
+					</div>
+				))
+			}
+		</div>
+	</section>
+
+	<!-- Connect Section -->
+	<section class="app-container py-24 grid lg:grid-cols-2 gap-16 lg:gap-10">
+		<div class="space-y-6">
+			<h2 class="section-title">{community.connectTitle}</h2>
+			<p class="text-lg max-w-xl pb-4">
+				{community.connectText}
+			</p>
+			<a
+				class="btn-secondary"
+				href={community.discordUrl}
+				target="_blank"
+			>
+				Join Discord Server
+				<Icon size={20} name="mdi:arrow-right" />
+			</a>
+		</div>
+		<div class="space-y-6">
+			<h2 class="section-title">{community.involvedTitle}</h2>
+			<p class="text-lg max-w-xl">
+				{community.involvedText}
+			</p>
+			<div class="flex flex-wrap mt-auto gap-4">
+				<a
+					class="btn-primary"
+					href="/about"
+				>
+					About QuCS
+					<Icon height={20} name="mdi:information" />
+				</a>
+				<a
+					class="btn-secondary"
+					href="/lectures"
+				>
+					View Lectures
+					<Icon height={20} name="mdi:play-circle" />
+				</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

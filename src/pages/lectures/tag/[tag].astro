@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/BlogCard.astro'
+import { getCollection } from 'astro:content'
+import { SITE_BASE } from '../../../consts'
+
+export const prerender = true
+
+export async function getStaticPaths() {
+	const allLectures = await getCollection('lectures', ({ data }) => {
+		// Only show public lectures in tag listings
+		return data.visibility === 'public'
+	})
+	const allTags = [...new Set(allLectures.flatMap((lecture) => lecture.data.tags || []))]
+
+	return allTags.map((tag) => ({
+		params: { tag },
+		props: {
+			tag: tag,
+			lectures: allLectures
+				.filter((lecture) => lecture.data.tags?.includes(tag))
+				.sort((a, b) => b.data.lectureDate.valueOf() - a.data.lectureDate.valueOf()),
+		},
+	}))
+}
+
+const { tag } = Astro.props
+const { lectures } = Astro.props
+---
+
+<BaseLayout
+	title={`Lectures tagged "${tag}"`}
+	description={`Browse all lectures tagged with ${tag}`}
+>
+	<main class="app-container py-36 md:py-48 pt-44 md:pt-56">
+		<div class="mb-12">
+			<a
+				href={`${SITE_BASE}/lectures`}
+				class="text-primary dark:text-primary-dark hover:underline mb-4 inline-block"
+			>
+				← Back to all lectures
+			</a>
+			<h1 class="text-6xl font-bold mb-4">
+				#{tag}
+			</h1>
+			<p class="text-xl opacity-70">
+				{lectures.length} {lectures.length === 1 ? 'lecture' : 'lectures'} with this tag
+			</p>
+		</div>
+
+		<div class="posts-grid-container">
+			{lectures.map((lecture) => <BlogCard post={lecture} />)}
+		</div>
+	</main>
+</BaseLayout>

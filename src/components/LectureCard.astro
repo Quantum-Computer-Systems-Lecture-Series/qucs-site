@@ -1,0 +1,98 @@
+---
+import { SITE_BASE } from '@/consts'
+import FormattedDate from './FormattedDate.astro'
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+import defaultCover from '@/assets/lectureimages/default-cover.png'
+import { getCategoryLabel } from '@/utils/categoryLabels'
+import { getYouTubeThumbnailUrl } from '@/utils/youtube'
+
+const { lecture } = Astro.props
+
+const lectureImages = import.meta.glob<{ default: ImageMetadata }>(
+	'/src/assets/lectureimages/**/*.{jpeg,jpg,png,gif}'
+)
+const coverImagePath = `/src/assets/lectureimages/${lecture.slug}/cover.jpg`
+
+// Get YouTube thumbnail from links array
+const youtubeLink = lecture.data.links?.find((link: { type: string }) => link.type === 'youtube')
+const youtubeThumbnail = youtubeLink ? getYouTubeThumbnailUrl(youtubeLink.url) : null
+---
+
+<div class="flex flex-col gap-4 pb-8 h-full group">
+	<a href={`${SITE_BASE}/lectures/${lecture.slug}/`}>
+		{
+			lecture.data.coverImageUrl ? (
+				<img
+					src={lecture.data.coverImageUrl}
+					alt={lecture.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : lecture.data.coverImage ? (
+				<Image
+					src={lecture.data.coverImage}
+					alt={lecture.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : lectureImages[coverImagePath] ? (
+				<Image
+					src={lectureImages[coverImagePath]()}
+					alt={lecture.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : youtubeThumbnail ? (
+				<img
+					src={youtubeThumbnail}
+					alt={lecture.data.title}
+					class="object-cover rounded-xl aspect-video"
+					/>
+			) : (
+				<Image
+					src={defaultCover}
+					alt={lecture.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			)
+		}
+	</a>
+	<div class="flex flex-wrap gap-2 items-center">
+		{lecture.data.category && (
+			<a
+				href={`${SITE_BASE}/lectures/category/${lecture.data.category}`}
+				class="text-xs px-2 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark rounded-full hover:bg-primary/20 dark:hover:bg-primary-dark/20 transition-colors"
+			>
+				{getCategoryLabel(lecture.data.category)}
+			</a>
+		)}
+		{lecture.data.speaker && (
+			<span class="text-xs opacity-60">
+				{lecture.data.speaker}
+			</span>
+		)}
+	</div>
+	<a href={`${SITE_BASE}/lectures/${lecture.slug}/`}>
+		<h4
+			class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark group-hover:underline transition-colors"
+		>
+			{lecture.data.title}
+		</h4>
+	</a>
+	<p class="line-clamp-3 opacity-80">
+		{lecture.data.description}
+	</p>
+	{lecture.data.tags && lecture.data.tags.length > 0 && (
+		<div class="flex flex-wrap gap-2">
+			{lecture.data.tags.map((tag: string) => (
+				<a
+					href={`${SITE_BASE}/lectures/tag/${tag}`}
+					class="text-xs opacity-60 hover:opacity-100 hover:underline transition-opacity"
+				>
+					#{tag}
+				</a>
+			))}
+		</div>
+	)}
+	<p class="uppercase text-sm mt-auto tracking-tight">
+		<FormattedDate date={lecture.data.lectureDate} />
+	</p>
+</div>

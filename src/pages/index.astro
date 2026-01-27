@@ -1,0 +1,120 @@
+---
+export const prerender = true
+
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_BASE } from '../consts'
+import { Icon } from 'astro-icon/components'
+import LectureCard from '../components/LectureCard.astro'
+import { getCollection } from 'astro:content'
+import { createReader } from '@keystatic/core/reader'
+import keystaticConfig from '../../keystatic.config'
+
+const reader = createReader(process.cwd(), keystaticConfig)
+
+const lectures = (await getCollection('lectures', ({ data }) => {
+	// Only show public lectures on homepage
+	return data.visibility === 'public'
+}))
+	.sort((a, b) => b.data.lectureDate.valueOf() - a.data.lectureDate.valueOf())
+	.slice(0, 4)
+
+const homeData = await reader.singletons.home.read()
+const socialData = await reader.singletons.social.read()
+
+// Fallback to defaults if data not yet configured
+const home = homeData || {
+	welcomeText: 'Welcome to',
+	heading: 'QuCS Lecture Series',
+	subheading: 'A lecture series exploring quantum computing and its applications.',
+	recentLecturesTitle: 'Recent Lectures',
+	aboutSeriesTitle: 'About the Series',
+	aboutSeriesText: 'Learn about our lecture series, its goals, and what topics we cover.',
+	speakersTitle: 'Our Speakers',
+	speakersText: 'Meet the experts and researchers presenting in our lecture series.',
+	contactEmail: 'contact@example.com',
+	registrationUrl: '',
+	calendarUrl: '',
+}
+
+const socialLinks = socialData?.links || []
+---
+
+<BaseLayout>
+	<main
+		class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
+	>
+		<div>
+			<p class="block text-3xl opacity-70 mt-9 mb-4">{home.welcomeText}</p>
+			<h1 class="text-8xl font-bold leading-none">{home.heading}</h1>
+		</div>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			{home.subheading}
+		</p>
+		<div class="flex flex-wrap gap-8">
+			{
+				socialLinks.map((link) => (
+					<a
+						class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
+						href={link.url}
+						target="_blank"
+					>
+						{link.name}
+					</a>
+				))
+			}
+		</div>
+	</main>
+
+	<!-- Recent Lectures Section -->
+	<section class="app-container">
+		<h2 class="section-title">{home.recentLecturesTitle}</h2>
+		<div class="posts-grid-container">
+			{lectures.map((lecture) => <LectureCard lecture={lecture} />)}
+		</div>
+		<a class="btn-secondary" href={`${SITE_BASE}/lectures`}
+			>View All Lectures
+			<Icon size={20} name="mdi:arrow-right" />
+		</a>
+	</section>
+
+	<!-- About Series & Speakers Section -->
+	<section class="app-container py-42 grid lg:grid-cols-2 gap-28 lg:gap-10">
+		<div class="space-y-6">
+			<h2 class="section-title">{home.aboutSeriesTitle}</h2>
+			<p class="text-lg max-w-xl pb-4">
+				{home.aboutSeriesText}
+			</p>
+			<a class="btn-secondary" href={`${SITE_BASE}/about`}
+				>Learn More
+				<Icon size={20} name="mdi:arrow-right" />
+			</a>
+		</div>
+		<div class="space-y-6">
+			<h2 class="section-title">{home.speakersTitle}</h2>
+			<p class="text-lg max-w-xl">
+				{home.speakersText}
+			</p>
+			<div class="flex flex-wrap mt-auto gap-4">
+				<a
+					class="btn-primary"
+					href={`mailto:${home.contactEmail}`}
+					target="_blank"
+					>Contact Us
+					<Icon height={20} name="mdi:email" />
+				</a>
+				{home.calendarUrl && (
+					<a class="btn-secondary" href={home.calendarUrl} target="_blank"
+						>Subscribe to Calendar
+						<Icon height={20} name="mdi:calendar" />
+					</a>
+				)}
+				{home.registrationUrl && (
+					<a class="btn-secondary" href={home.registrationUrl} target="_blank"
+						>Register
+						<Icon height={20} name="mdi:clipboard-list" />
+					</a>
+				)}
+			</div>
+		</div>
+	</section>
+</BaseLayout>

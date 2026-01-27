@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<text class="dynamic" x="512" y="700" font-family="system-ui, -apple-system, sans-serif" font-size="700" font-weight="bold" text-anchor="middle">Q.</text>
+	<style>
+		text.dynamic { fill: #000000; }@media (prefers-color-scheme: dark) {text.dynamic { fill: #FFFFFF; }}
+	</style>
+</svg>

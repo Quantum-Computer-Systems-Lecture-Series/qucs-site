@@ -1,0 +1,9 @@
+links:
+  - name: Home
+    url: ''
+  - name: Lectures
+    url: lectures
+  - name: Community
+    url: community
+  - name: About
+    url: about

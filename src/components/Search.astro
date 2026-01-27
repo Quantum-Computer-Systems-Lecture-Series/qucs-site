@@ -1,0 +1,104 @@
+---
+// Search component using Pagefind
+const { placeholder = "Search lectures..." } = Astro.props;
+---
+
+<div class="search-container" data-pagefind-ignore>
+  <div class="search-wrapper">
+    <div id="search"></div>
+  </div>
+</div>
+
+<script>
+  // @ts-ignore
+  import { PagefindUI } from '@pagefind/default-ui';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      showImages: false,
+      excerptLength: 15,
+      resetStyles: false,
+      highlightParam: 'highlight',
+    });
+  });
+</script>
+
+<style>
+  .search-container {
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .search-wrapper {
+    position: relative;
+  }
+
+  :global(.pagefind-ui__search-input) {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    transition: all 0.2s ease;
+  }
+
+  :global(.pagefind-ui__search-input:focus) {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(7, 132, 181, 0.1);
+  }
+
+  :global(.pagefind-ui__results) {
+    margin-top: 1rem;
+  }
+
+  :global(.pagefind-ui__result) {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--color-background);
+    transition: all 0.2s ease;
+  }
+
+  :global(.dark .pagefind-ui__result) {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  :global(.pagefind-ui__result:hover) {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.pagefind-ui__result-title) {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.pagefind-ui__result-excerpt) {
+    color: var(--color-foreground);
+    line-height: 1.6;
+  }
+
+  :global(.pagefind-ui__result-link) {
+    text-decoration: none;
+  }
+
+  :global(mark) {
+    background-color: rgba(7, 132, 181, 0.2);
+    color: var(--color-foreground);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+  }
+</style>
+
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<script is:inline src="/_pagefind/pagefind-ui.js"></script>

@@ -1,0 +1,102 @@
+---
+import { SITE_BASE } from '@/consts'
+import FormattedDate from './FormattedDate.astro'
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+import { getCategoryLabel } from '@/utils/categoryLabels'
+import { getYouTubeThumbnailUrl } from '@/utils/youtube'
+
+const { post } = Astro.props
+
+// Determine if this is a lecture or blog post based on collection
+const isLecture = post.collection === 'lectures'
+const basePath = isLecture ? 'lectures' : 'blog'
+
+// Fallback to old path structure for existing posts without coverImage
+const blogImages = import.meta.glob<{ default: ImageMetadata }>(
+	'/src/assets/blogimages/**/*.{jpeg,jpg,png,gif}'
+)
+const lectureImages = import.meta.glob<{ default: ImageMetadata }>(
+	'/src/assets/lectureimages/**/*.{jpeg,jpg,png,gif}'
+)
+const coverImagePath = isLecture
+	? `/src/assets/lectureimages/${post.slug}/cover.jpg`
+	: `/src/assets/blogimages/${post.slug}/cover.jpg`
+const images = isLecture ? lectureImages : blogImages
+
+// Get YouTube thumbnail from links array
+const youtubeLink = post.data.links?.find((link: { type: string }) => link.type === 'youtube')
+const youtubeThumbnail = youtubeLink ? getYouTubeThumbnailUrl(youtubeLink.url) : null
+---
+
+<div class="flex flex-col gap-4 pb-8 h-full group">
+	<a href={`${SITE_BASE}/${basePath}/${post.slug}/`}>
+		{
+			post.data.coverImageUrl ? (
+				<img
+					src={post.data.coverImageUrl}
+					alt={post.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : post.data.coverImage ? (
+				<Image
+					src={post.data.coverImage}
+					alt={post.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : images[coverImagePath] ? (
+				<Image
+					src={images[coverImagePath]()}
+					alt={post.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : youtubeThumbnail ? (
+				<img
+					src={youtubeThumbnail}
+					alt={post.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : null
+		}
+	</a>
+	<div class="flex flex-wrap gap-2 items-center">
+		{post.data.category && (
+			<a
+				href={`${SITE_BASE}/${basePath}/category/${post.data.category}`}
+				class="text-xs px-2 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark rounded-full hover:bg-primary/20 dark:hover:bg-primary-dark/20 transition-colors"
+			>
+				{getCategoryLabel(post.data.category)}
+			</a>
+		)}
+		{isLecture && post.data.speaker && (
+			<span class="text-xs opacity-60">
+				{post.data.speaker}
+			</span>
+		)}
+	</div>
+	<a href={`${SITE_BASE}/${basePath}/${post.slug}/`}>
+		<h4
+			class="text-2xl font-semibold group-hover:text-primary dark:group-hover:text-primary-dark group-hover:underline transition-colors"
+		>
+			{post.data.title}
+		</h4>
+	</a>
+	<p class="line-clamp-3 opacity-80">
+		{post.data.description}
+	</p>
+	{post.data.tags && post.data.tags.length > 0 && (
+		<div class="flex flex-wrap gap-2">
+			{post.data.tags.map((tag: string) => (
+				<a
+					href={`${SITE_BASE}/${basePath}/tag/${tag}`}
+					class="text-xs opacity-60 hover:opacity-100 hover:underline transition-opacity"
+				>
+					#{tag}
+				</a>
+			))}
+		</div>
+	)}
+	<p class="uppercase text-sm mt-auto tracking-tight">
+		<FormattedDate date={isLecture ? post.data.lectureDate : post.data.pubDate} />
+	</p>
+</div>
