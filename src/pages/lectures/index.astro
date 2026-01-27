@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import LectureCard from '../../components/LectureCard.astro'
+import LectureSearch from '../../components/LectureSearch.astro'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 
 export const prerender = true
@@ -20,13 +21,25 @@ const lectures = (await getCollection('lectures', ({ data }) => {
 			introductory topics to advanced research. Learn from experts across
 			academia and industry.
 		</p>
+		<div class="mt-8 max-w-xl">
+			<LectureSearch />
+		</div>
 	</main>
 	<section class="app-container py-12">
 		<ul class="posts-grid-container">
 			{
 				lectures.map((lecture) => (
 					<li>
-						<LectureCard lecture={lecture} />
+						<div
+							data-lecture-card
+							data-title={lecture.data.title}
+							data-speaker={lecture.data.speaker || ''}
+							data-tags={lecture.data.tags?.join(' ') || ''}
+							data-category={lecture.data.category || ''}
+							data-description={lecture.data.description || ''}
+						>
+							<LectureCard lecture={lecture} />
+						</div>
 					</li>
 				))
 			}

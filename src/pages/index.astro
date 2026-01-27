@@ -8,8 +8,42 @@ import LectureCard from '../components/LectureCard.astro'
 import { getCollection } from 'astro:content'
 import { createReader } from '@keystatic/core/reader'
 import keystaticConfig from '../../keystatic.config'
+import { lectureCategories } from '../utils/categoryLabels'
 
 const reader = createReader(process.cwd(), keystaticConfig)
+
+// Get lecture counts per category
+const allLectures = await getCollection('lectures', ({ data }) => data.visibility === 'public')
+const categoryCounts = new Map<string, number>()
+allLectures.forEach((lecture) => {
+	const cat = lecture.data.category
+	if (cat) categoryCounts.set(cat, (categoryCounts.get(cat) || 0) + 1)
+})
+
+// Category icons mapping
+const categoryIcons: Record<string, string> = {
+	'general': 'mdi:book-open-variant',
+	'algorithms-and-theory': 'mdi:function-variant',
+	'systems-and-architecture': 'mdi:server',
+	'error-correction-and-mitigation': 'mdi:shield-check',
+	'compilation-and-optimization': 'mdi:cog-transfer',
+	'machine-learning-and-ai': 'mdi:brain',
+	'networking-and-communication': 'mdi:lan',
+	'hardware-and-control': 'mdi:chip',
+	'physics-and-simulation': 'mdi:atom',
+	'software-tools-and-verification': 'mdi:wrench',
+	'applications': 'mdi:application-brackets',
+}
+
+// Filter to categories with lectures and sort by count
+const activeCategories = lectureCategories
+	.filter((cat) => categoryCounts.get(cat.value) && categoryCounts.get(cat.value)! > 0)
+	.map((cat) => ({
+		...cat,
+		count: categoryCounts.get(cat.value) || 0,
+		icon: categoryIcons[cat.value] || 'mdi:folder',
+	}))
+	.sort((a, b) => b.count - a.count)
 
 const lectures = (await getCollection('lectures', ({ data }) => {
 	// Only show public lectures on homepage
@@ -75,6 +109,30 @@ const socialLinks = socialData?.links || []
 			>View All Lectures
 			<Icon size={20} name="mdi:arrow-right" />
 		</a>
+	</section>
+
+	<!-- Explore by Topics Section -->
+	<section class="app-container py-16">
+		<h2 class="section-title">Explore by Topics</h2>
+		<p class="text-lg max-w-2xl pb-6 opacity-80">
+			Browse lectures by research area to find content that matches your interests.
+		</p>
+		<div class="flex flex-wrap gap-2">
+			{activeCategories.map((category) => (
+				<a
+					href={`${SITE_BASE}/lectures/category/${category.value}`}
+					class="group flex items-center gap-2 px-3 py-2 rounded-lg border border-foreground/10 dark:border-foreground-dark/10 hover:border-primary/30 dark:hover:border-primary-dark/30 hover:bg-primary/5 dark:hover:bg-primary-dark/5 transition-colors"
+				>
+					<Icon name={category.icon} class="w-4 h-4 text-primary dark:text-primary-dark" />
+					<span class="text-sm font-medium group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
+						{category.label}
+					</span>
+					<span class="text-xs text-foreground/40 dark:text-foreground-dark/40">
+						{category.count}
+					</span>
+				</a>
+			))}
+		</div>
 	</section>
 
 	<!-- About Series & Speakers Section -->

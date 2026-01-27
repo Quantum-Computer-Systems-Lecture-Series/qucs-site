@@ -5,6 +5,7 @@ import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
 import { getCategoryLabel } from '@/utils/categoryLabels'
 import { getYouTubeThumbnailUrl } from '@/utils/youtube'
+import defaultCover from '@/assets/lectureimages/default-cover.png'
 
 const { post } = Astro.props
 
@@ -53,6 +54,12 @@ const youtubeThumbnail = youtubeLink ? getYouTubeThumbnailUrl(youtubeLink.url) :
 			) : youtubeThumbnail ? (
 				<img
 					src={youtubeThumbnail}
+					alt={post.data.title}
+					class="object-cover rounded-xl aspect-video"
+				/>
+			) : isLecture ? (
+				<Image
+					src={defaultCover}
 					alt={post.data.title}
 					class="object-cover rounded-xl aspect-video"
 				/>

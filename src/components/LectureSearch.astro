@@ -1,0 +1,123 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+	placeholder?: string
+}
+
+const { placeholder = 'Search lectures by title, speaker, or tags...' } = Astro.props
+---
+
+<div class="lecture-search-container">
+	<div class="relative">
+		<Icon
+			name="mdi:magnify"
+			class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground/50 dark:text-foreground-dark/50"
+		/>
+		<input
+			type="text"
+			id="lecture-search-input"
+			placeholder={placeholder}
+			class="w-full pl-12 pr-4 py-3 text-base border-2 border-foreground/20 dark:border-foreground-dark/20 rounded-lg bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark placeholder:text-foreground/50 dark:placeholder:text-foreground-dark/50 focus:outline-none focus:border-primary dark:focus:border-primary-dark transition-colors"
+		/>
+		<button
+			type="button"
+			id="lecture-search-clear"
+			class="absolute right-4 top-1/2 -translate-y-1/2 text-foreground/50 dark:text-foreground-dark/50 hover:text-foreground dark:hover:text-foreground-dark transition-colors hidden"
+			aria-label="Clear search"
+		>
+			<Icon name="mdi:close" class="w-5 h-5" />
+		</button>
+	</div>
+	<p id="lecture-search-results" class="mt-3 text-sm text-foreground/60 dark:text-foreground-dark/60 hidden"></p>
+</div>
+
+<script>
+	function initLectureSearch() {
+		const searchInput = document.getElementById('lecture-search-input') as HTMLInputElement
+		const clearButton = document.getElementById('lecture-search-clear')
+		const resultsText = document.getElementById('lecture-search-results')
+		const lectureCards = document.querySelectorAll('[data-lecture-card]')
+
+		if (!searchInput || !clearButton || !resultsText || lectureCards.length === 0) return
+
+		const totalLectures = lectureCards.length
+
+		function filterLectures(query: string) {
+			const normalizedQuery = query.toLowerCase().trim()
+			let visibleCount = 0
+
+			lectureCards.forEach((card) => {
+				const title = card.getAttribute('data-title')?.toLowerCase() || ''
+				const speaker = card.getAttribute('data-speaker')?.toLowerCase() || ''
+				const tags = card.getAttribute('data-tags')?.toLowerCase() || ''
+				const category = card.getAttribute('data-category')?.toLowerCase() || ''
+				const description = card.getAttribute('data-description')?.toLowerCase() || ''
+
+				const matches =
+					normalizedQuery === '' ||
+					title.includes(normalizedQuery) ||
+					speaker.includes(normalizedQuery) ||
+					tags.includes(normalizedQuery) ||
+					category.includes(normalizedQuery) ||
+					description.includes(normalizedQuery)
+
+				const listItem = card.closest('li')
+				if (listItem) {
+					if (matches) {
+						listItem.classList.remove('hidden')
+						visibleCount++
+					} else {
+						listItem.classList.add('hidden')
+					}
+				}
+			})
+
+			// Update results text
+			if (normalizedQuery === '') {
+				resultsText.classList.add('hidden')
+			} else {
+				resultsText.classList.remove('hidden')
+				if (visibleCount === 0) {
+					resultsText.textContent = `No lectures found for "${query}"`
+				} else if (visibleCount === totalLectures) {
+					resultsText.textContent = `Showing all ${totalLectures} lectures`
+				} else {
+					resultsText.textContent = `Showing ${visibleCount} of ${totalLectures} lectures`
+				}
+			}
+
+			// Show/hide clear button
+			if (normalizedQuery === '') {
+				clearButton.classList.add('hidden')
+			} else {
+				clearButton.classList.remove('hidden')
+			}
+		}
+
+		searchInput.addEventListener('input', (e) => {
+			const target = e.target as HTMLInputElement
+			filterLectures(target.value)
+		})
+
+		clearButton.addEventListener('click', () => {
+			searchInput.value = ''
+			filterLectures('')
+			searchInput.focus()
+		})
+
+		// Handle escape key to clear search
+		searchInput.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				searchInput.value = ''
+				filterLectures('')
+			}
+		})
+	}
+
+	// Initialize on page load
+	document.addEventListener('DOMContentLoaded', initLectureSearch)
+
+	// Re-initialize on Astro page transitions
+	document.addEventListener('astro:page-load', initLectureSearch)
+</script>

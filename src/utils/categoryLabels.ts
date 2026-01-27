@@ -1,5 +1,6 @@
 // Single source of truth for lecture categories
 export const lectureCategories = [
+  { label: 'General', value: 'general' },
   { label: 'Algorithms & Theory', value: 'algorithms-and-theory' },
   { label: 'Systems & Architecture', value: 'systems-and-architecture' },
   { label: 'Error Correction & Mitigation', value: 'error-correction-and-mitigation' },
