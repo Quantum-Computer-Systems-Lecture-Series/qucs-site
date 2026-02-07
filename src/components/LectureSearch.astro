@@ -34,14 +34,16 @@ const { placeholder = 'Search lectures by title, speaker, or tags...' } = Astro.
 
 <script>
 	function initLectureSearch() {
-		const searchInput = document.getElementById('lecture-search-input') as HTMLInputElement
-		const clearButton = document.getElementById('lecture-search-clear')
-		const resultsText = document.getElementById('lecture-search-results')
+		const searchInput = document.getElementById('lecture-search-input') as HTMLInputElement | null
+		const clearButton = document.getElementById('lecture-search-clear') as HTMLElement | null
+		const resultsText = document.getElementById('lecture-search-results') as HTMLElement | null
 		const lectureCards = document.querySelectorAll('[data-lecture-card]')
 
 		if (!searchInput || !clearButton || !resultsText || lectureCards.length === 0) return
 
 		const totalLectures = lectureCards.length
+		const results = resultsText
+		const clear = clearButton
 
 		function filterLectures(query: string) {
 			const normalizedQuery = query.toLowerCase().trim()
@@ -75,23 +77,23 @@ const { placeholder = 'Search lectures by title, speaker, or tags...' } = Astro.
 
 			// Update results text
 			if (normalizedQuery === '') {
-				resultsText.classList.add('hidden')
+				results.classList.add('hidden')
 			} else {
-				resultsText.classList.remove('hidden')
+				results.classList.remove('hidden')
 				if (visibleCount === 0) {
-					resultsText.textContent = `No lectures found for "${query}"`
+					results.textContent = `No lectures found for "${query}"`
 				} else if (visibleCount === totalLectures) {
-					resultsText.textContent = `Showing all ${totalLectures} lectures`
+					results.textContent = `Showing all ${totalLectures} lectures`
 				} else {
-					resultsText.textContent = `Showing ${visibleCount} of ${totalLectures} lectures`
+					results.textContent = `Showing ${visibleCount} of ${totalLectures} lectures`
 				}
 			}
 
 			// Show/hide clear button
 			if (normalizedQuery === '') {
-				clearButton.classList.add('hidden')
+				clear.classList.add('hidden')
 			} else {
-				clearButton.classList.remove('hidden')
+				clear.classList.remove('hidden')
 			}
 		}
 
@@ -100,7 +102,7 @@ const { placeholder = 'Search lectures by title, speaker, or tags...' } = Astro.
 			filterLectures(target.value)
 		})
 
-		clearButton.addEventListener('click', () => {
+		clear.addEventListener('click', () => {
 			searchInput.value = ''
 			filterLectures('')
 			searchInput.focus()

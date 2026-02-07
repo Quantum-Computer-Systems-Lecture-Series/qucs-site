@@ -14,7 +14,7 @@ export const lectureCategories = [
 ] as const
 
 // Create a map for quick lookup
-const categoryMap = new Map(lectureCategories.map(cat => [cat.value, cat.label]))
+const categoryMap = new Map<string, string>(lectureCategories.map(cat => [cat.value, cat.label]))
 
 export function getCategoryLabel(slug: string): string {
   return categoryMap.get(slug) || slug
