@@ -14,7 +14,7 @@ import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://www.qucs.info',
+	site: 'https://qucs.info',
 	base: '/',
 	output: 'server',
 	adapter: cloudflare({
