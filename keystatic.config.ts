@@ -3,10 +3,12 @@ import { seo, home, about, community, social, navigation, footer, team } from 's
 import { lectures } from 'src/cms/collections';
 
 export default config({
-  storage: {
-    kind: 'github',
-    repo: 'langxubai/qucs-site',
-  },
+  storage: import.meta.env?.DEV
+    ? { kind: 'local' }
+    : {
+      kind: 'github',
+      repo: 'langxubai/qucs-site',
+    },
 
   ui: {
     brand: { name: 'QuCS' },
