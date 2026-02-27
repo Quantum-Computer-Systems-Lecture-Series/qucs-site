@@ -136,7 +136,7 @@ const youtubeId = youtubeLink ? getYouTubeId(youtubeLink.url) : null
 						<!-- Resource Links (Slides, Videos, etc.) -->
 						<div class="flex gap-3 flex-wrap mb-8">
 							<a
-								href={import.meta.env.DEV ? `http://127.0.0.1:4321/api/calendar/${slug}.ics` : `https://tools.qucs.info/api/calendar/${slug}.ics`}
+								href={import.meta.env.PUBLIC_TOOLS_URL ? `${import.meta.env.PUBLIC_TOOLS_URL}/api/calendar/${slug}.ics` : `https://tools.qucs.info/api/calendar/${slug}.ics`}
 								class="btn-secondary"
 							>
 								<Icon name="mdi:calendar-plus" class="w-5 h-5" />

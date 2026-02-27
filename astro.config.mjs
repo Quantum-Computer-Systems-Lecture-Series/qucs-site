@@ -17,7 +17,7 @@ const env = loadEnv(process.env.NODE_ENV || 'development', process.cwd(), '')
 
 // https://astro.build/config
 export default defineConfig({
-	site: env.PUBLIC_SITE_URL || 'http://127.0.0.1:4321',
+	site: env.PUBLIC_SITE_URL || 'https://qucs.info',
 	base: '/',
 	output: 'server',
 	adapter: cloudflare({

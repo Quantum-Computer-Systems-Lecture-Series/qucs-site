@@ -7,7 +7,7 @@ export default config({
     ? { kind: 'local' }
     : {
       kind: 'github',
-      repo: 'langxubai/qucs-site',
+      repo: (import.meta.env?.PUBLIC_GITHUB_REPO || process.env.PUBLIC_GITHUB_REPO || 'Quantum-Computer-Systems-Lecture-Series/qucs-site') as `${string}/${string}`,
     },
 
   ui: {

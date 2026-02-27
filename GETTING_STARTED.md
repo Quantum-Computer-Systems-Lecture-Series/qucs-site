@@ -73,6 +73,11 @@ git push -u origin master
    KEYSTATIC_GITHUB_CLIENT_SECRET=your_client_secret_here
    KEYSTATIC_SECRET=any_random_string_here
    PUBLIC_KEYSTATIC_GITHUB_APP_SLUG=qucs-keystatic
+   
+   # Optional: Local Development Overrides
+   # PUBLIC_GITHUB_REPO=langxubai/qucs-site
+   # PUBLIC_SITE_URL=http://127.0.0.1:4321
+   # PUBLIC_TOOLS_URL=http://127.0.0.1:4321
    ```
 
 4. **Add collaborators**:
