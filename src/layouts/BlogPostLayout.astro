@@ -134,33 +134,38 @@ const youtubeId = youtubeLink ? getYouTubeId(youtubeLink.url) : null
 						</div>
 
 						<!-- Resource Links (Slides, Videos, etc.) -->
-						{(links && links.length > 0 || speakerEmail) && (
-							<div class="flex gap-3 flex-wrap mb-8">
-								{links && links.map((link: { label: string; url: string; type: 'slides' | 'youtube' | 'bilibili' | 'other' }) => (
-									<a
-										href={link.url}
-										target="_blank"
-										rel="noopener noreferrer"
-										class="btn-secondary"
-									>
-										{link.type === 'slides' && <Icon name="mdi:presentation" class="w-5 h-5" />}
-										{link.type === 'youtube' && <Icon name="mdi:youtube" class="w-5 h-5" />}
-										{link.type === 'bilibili' && <Icon name="mdi:video" class="w-5 h-5" />}
-										{link.type === 'other' && <Icon name="mdi:link" class="w-5 h-5" />}
-										{link.label}
-									</a>
-								))}
-								{speakerEmail && (
-									<a
-										href={`mailto:${speakerEmail}`}
-										class="btn-secondary"
-									>
-										<Icon name="mdi:email" class="w-5 h-5" />
-										Contact Speaker
-									</a>
-								)}
-							</div>
-						)}
+						<div class="flex gap-3 flex-wrap mb-8">
+							<a
+								href={`https://tool.qucs.info/api/calendar/${slug}.ics`}
+								class="btn-secondary"
+							>
+								<Icon name="mdi:calendar-plus" class="w-5 h-5" />
+								Add to Calendar
+							</a>
+							{links && links.map((link: { label: string; url: string; type: 'slides' | 'youtube' | 'bilibili' | 'other' }) => (
+								<a
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="btn-secondary"
+								>
+									{link.type === 'slides' && <Icon name="mdi:presentation" class="w-5 h-5" />}
+									{link.type === 'youtube' && <Icon name="mdi:youtube" class="w-5 h-5" />}
+									{link.type === 'bilibili' && <Icon name="mdi:video" class="w-5 h-5" />}
+									{link.type === 'other' && <Icon name="mdi:link" class="w-5 h-5" />}
+									{link.label}
+								</a>
+							))}
+							{speakerEmail && (
+								<a
+									href={`mailto:${speakerEmail}`}
+									class="btn-secondary"
+								>
+									<Icon name="mdi:email" class="w-5 h-5" />
+									Contact Speaker
+								</a>
+							)}
+						</div>
 
 						<!-- YouTube Video Embed -->
 						{youtubeId && (

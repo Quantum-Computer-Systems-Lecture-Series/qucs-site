@@ -5,7 +5,7 @@ import { lectures } from 'src/cms/collections';
 export default config({
   storage: {
     kind: 'github',
-    repo: 'Quantum-Computer-Systems-Lecture-Series/qucs-site',
+    repo: 'langxubai/qucs-site',
   },
 
   ui: {
