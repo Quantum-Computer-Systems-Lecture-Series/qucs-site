@@ -33,14 +33,10 @@ export const GET: APIRoute = async ({ params }) => {
 	const month = String(lectureDate.getMonth() + 1).padStart(2, '0')
 	const day = String(lectureDate.getDate()).padStart(2, '0')
 	const dateString = `${year}${month}${day}`
-	
-	// Next day for all-day event
-	const nextDayDate = new Date(lectureDate)
-	nextDayDate.setDate(nextDayDate.getDate() + 1)
-	const nextYear = nextDayDate.getFullYear()
-	const nextMonth = String(nextDayDate.getMonth() + 1).padStart(2, '0')
-	const nextDayObj = String(nextDayDate.getDate()).padStart(2, '0')
-	const nextDateString = `${nextYear}${nextMonth}${nextDayObj}`
+
+	// Using placeholder time 08:00:00 to 10:00:00 as no specific time is provided yet
+	const startTimeObj = `${dateString}T080000`
+	const endTimeObj = `${dateString}T100000`
 
 	// Create UID
 	const uid = `${slug}@qucs.info`
@@ -49,18 +45,48 @@ export const GET: APIRoute = async ({ params }) => {
 	const now = new Date()
 	const dtstamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
 
-	let summary = title
-	if (speaker) {
-		summary += ` - ${speaker}`
+	// Format the summary based on title, speaker, and affiliation
+	const titleParts = title.split('|').map(s => s.trim())
+	let lecNum = '';
+	let lecTitle = title;
+	if (titleParts.length >= 2 && !isNaN(Number(titleParts[0]))) {
+		lecNum = `Lec${titleParts[0]}`;
+		lecTitle = titleParts[1];
+	} else {
+		// Try to extract number from slug if title is not in '70 | Title' format
+		const match = slug.match(/^(\d+)-/);
+		lecNum = match ? `Lec${match[1]}` : 'Lec';
 	}
 
+	const speakerText = [speaker, lecture.data.speakerAffiliation].filter(Boolean).join('-');
+
+	let summary = `${lecNum}|${lecTitle}`;
+	if (speakerText) {
+		summary += `|${speakerText}`;
+	}
+
+	// Extract only the abstract from the body
+	let abstractText = '';
+	if (lecture.body) {
+		const match = lecture.body.match(/##\s*Abstract([\s\S]*?)(?=##|$)/i);
+		if (match && match[1]) {
+			abstractText = match[1].trim();
+		} else {
+			abstractText = lecture.body.trim();
+		}
+	} else if (description) {
+		abstractText = description;
+	}
+
+	let fullDescription = abstractText;
+
 	// Escape text for ICS
-	const cleanDescription = (description || '')
+	const cleanDescription = fullDescription
 		.replace(/\\/g, '\\\\')
 		.replace(/;/g, '\\;')
 		.replace(/,/g, '\\,')
 		.replace(/\n/g, '\\n')
-	
+
 	const cleanSummary = summary
 		.replace(/\\/g, '\\\\')
 		.replace(/;/g, '\\;')
@@ -73,9 +99,10 @@ CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:${uid}
 DTSTAMP:${dtstamp}
-DTSTART;VALUE=DATE:${dateString}
-DTEND;VALUE=DATE:${nextDateString}
+DTSTART:${startTimeObj}
+DTEND:${endTimeObj}
 SUMMARY:${cleanSummary}
+LOCATION:https://tinyurl.com/gucs-zoom
 DESCRIPTION:${cleanDescription}
 URL:https://qucs.info/lectures/${slug}
 END:VEVENT
