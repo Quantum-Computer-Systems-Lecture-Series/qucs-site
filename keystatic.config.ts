@@ -3,10 +3,12 @@ import { seo, home, about, community, social, navigation, footer, team } from 's
 import { lectures } from 'src/cms/collections';
 
 export default config({
-  storage: {
-    kind: 'github',
-    repo: 'Quantum-Computer-Systems-Lecture-Series/qucs-site',
-  },
+  storage: import.meta.env?.DEV
+    ? { kind: 'local' }
+    : {
+      kind: 'github',
+      repo: (import.meta.env?.PUBLIC_GITHUB_REPO || process.env.PUBLIC_GITHUB_REPO || 'Quantum-Computer-Systems-Lecture-Series/qucs-site') as `${string}/${string}`,
+    },
 
   ui: {
     brand: { name: 'QuCS' },

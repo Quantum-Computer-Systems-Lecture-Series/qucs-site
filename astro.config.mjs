@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import { loadEnv } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
@@ -12,9 +13,11 @@ import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
 import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs'
 import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 
+const env = loadEnv(process.env.NODE_ENV || 'development', process.cwd(), '')
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://qucs.info',
+	site: env.PUBLIC_SITE_URL || 'https://qucs.info',
 	base: '/',
 	output: 'server',
 	adapter: cloudflare({
@@ -48,10 +51,10 @@ export default defineConfig({
 			}
 		},
 		define: {
-			'process.env.KEYSTATIC_GITHUB_CLIENT_ID': JSON.stringify(process.env.KEYSTATIC_GITHUB_CLIENT_ID),
-			'process.env.KEYSTATIC_GITHUB_CLIENT_SECRET': JSON.stringify(process.env.KEYSTATIC_GITHUB_CLIENT_SECRET),
-			'process.env.KEYSTATIC_SECRET': JSON.stringify(process.env.KEYSTATIC_SECRET),
-			'process.env.PUBLIC_KEYSTATIC_GITHUB_APP_SLUG': JSON.stringify(process.env.PUBLIC_KEYSTATIC_GITHUB_APP_SLUG)
+			'process.env.KEYSTATIC_GITHUB_CLIENT_ID': JSON.stringify(env.KEYSTATIC_GITHUB_CLIENT_ID),
+			'process.env.KEYSTATIC_GITHUB_CLIENT_SECRET': JSON.stringify(env.KEYSTATIC_GITHUB_CLIENT_SECRET),
+			'process.env.KEYSTATIC_SECRET': JSON.stringify(env.KEYSTATIC_SECRET),
+			'process.env.PUBLIC_KEYSTATIC_GITHUB_APP_SLUG': JSON.stringify(env.PUBLIC_KEYSTATIC_GITHUB_APP_SLUG)
 		}
 	},
 	markdown: {
