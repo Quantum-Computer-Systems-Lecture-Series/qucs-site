@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:71-using-quantum-probability-to-understand-contextual-reasoning@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20260406T080000
+DTEND:20260406T100000
+SUMMARY:Lec71|Using Quantum Probability to Understand Contextual Reasoning|Jerome Busemeyer-Indiana University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:What kind of logic do people use to reason about natural events? What kind of probability theory best describes how people make inferences and decisions under uncertainty? I will review empirical evidence from a variety of domains that demonstrate the contextual nature of our reasoning and decision-making processes. This includes empirical examples from attitude surveys\, membership judgments\, categorization decisions\, probability estimates\, preferential choices\, and risky decision-making. These findings are difficult to explain using classical logic and Bayesian probability theory. Although various heuristics have been proposed to account for these findings\, they turn out to be ad hoc\, unsystematic\, and even inconsistent. Quantum probability is an alternative\, and completely general\, probability theory\, which is based on different axioms that Bayesian probability.&nbsp\; I will show that quantum probability theory provides a simple\, systematic\, and coherent way to understand the contextual nature of human reasoning.&nbsp\;&nbsp\;&nbsp\;
+URL:https://qucs.info/lectures/71-using-quantum-probability-to-understand-contextual-reasoning
+END:VEVENT
+END:VCALENDAR

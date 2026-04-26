@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:9-protocol-design-for-quantum-network-routing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220908T080000
+DTEND:20220908T100000
+SUMMARY:Lec9|Protocol Design for Quantum Network Routing|Chen Qian-UCSC
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum entanglement enables important computing applications such as quantum key distribution. Based on quantum entanglement\, quantum networks are built to provide long-distance secret sharing between two remote communication parties. Establishing a multihop quantum entanglement exhibits a high failure rate. When the scale of a quantum network increases\, it requires end-to-end multi-hop quantum entanglements in order to deliver quantum bits without letting the repeaters know the bits. This talk presents a very early effort to design a scalable protocol for entanglement routing. We present a comprehensive entanglement routing model that reflects the differences between quantum networks and classical networks as well as a new entanglement routing algorithm that utilizes the unique properties of quantum networks. We hope our efforts can encourage more work on quantum network protocols in the future. The paper discussed in the talk was published in ACM SIGCOMM conference 2020 and can be found at https://users.soe.ucsc.edu/~qian/papers/QuantumRouting.pdf.
+URL:https://qucs.info/lectures/9-protocol-design-for-quantum-network-routing
+END:VEVENT
+END:VCALENDAR

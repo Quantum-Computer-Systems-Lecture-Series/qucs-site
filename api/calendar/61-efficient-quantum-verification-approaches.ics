@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:61-efficient-quantum-verification-approaches@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240321T080000
+DTEND:20240321T100000
+SUMMARY:Lec61|Efficient Quantum Verification Approaches.|Kanad Basu-University of Texas at Dallas
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum computing has proven capable of accelerating many algorithms by performing tasks that classical computers cannot. As quantum algorithms and implementations grow more complex\, the need for rigorous circuit verification becomes critical. This ensures correct compilation and enhances circuit fidelity through error correction and assertions. In this talk\, we will present several existing quantum verification approaches\, including those involving ZX calculus\, Decision Diagrams\, and Simulations. Moreover\, we will discuss the limitations of these methodologies and future research directions.&nbsp\;
+URL:https://qucs.info/lectures/61-efficient-quantum-verification-approaches
+END:VEVENT
+END:VCALENDAR

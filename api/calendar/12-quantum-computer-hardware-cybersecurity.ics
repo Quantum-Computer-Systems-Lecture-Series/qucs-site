@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:12-quantum-computer-hardware-cybersecurity@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221014T080000
+DTEND:20221014T100000
+SUMMARY:Lec12|Quantum Computer Hardware Cybersecurity|Jakub Szefer-Yale
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:As Quantum Computer device research continues to advance rapidly\, there are also advances at the other levels of the computer system stack that involve these devices. In particular\, more and more of the Quantum Computer devices are becoming available as cloud-based services through IBM Quantum\, Amazon Braket\, Microsoft Azure\, and others. In parallel\, researchers have put forward ideas about multi-programming of the Quantum Computer devices where single device can be shared by multiple programs\, or even multiple users. While all of the advances make the Quantum Computer devices more easily accessible and increase utilization\, they open up the devices to various security threats. Especially\, with cloud-based access and multi-tenancy\, different\, remote\, and untrusted users could abuse the Quantum Computer devices to leak information from other users using the shared devices\, map or learn about the Quantum Computer infrastructure itself. Malicious users could also try to reverse engineer the Quantum Computer architectures to learn about the design of the hardware devices. On the other hand\, users are not immune today from malicious or compromised cloud operators who may want to spy on the circuits of the users which are executing on the Quantum Computers hosted within the operator’s data centers. Considering the different security threats\, and lessons learned from security of classical computers\, this talk will introduce the new research field of Quantum Computer Hardware Security\, present recent research results in attacks and defenses on Quantum Computers. The goal of the presentation is to motivate discussion about Quantum Computer Hardware Cybersecurity and make connections between the Quantum Computer research community and the Hardware Security research community to help develop secure Quantum Computer architectures and protect the devices before they are widely deployed.
+URL:https://qucs.info/lectures/12-quantum-computer-hardware-cybersecurity
+END:VEVENT
+END:VCALENDAR

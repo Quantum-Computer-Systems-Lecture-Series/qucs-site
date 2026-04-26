@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:54-quantum-computing-systems-challenges-and-opportunities@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240118T080000
+DTEND:20240118T100000
+SUMMARY:Lec54|Quantum Computing Systems: Challenges and Opportunities|Yufei Ding-UCSD
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The second quantum revolution\, the transition from quantum theory to quantum engineering\, is leading us toward practical quantum computing. However\, there are still many obstacles hindering practical quantum computing. In this talk\, I give my vision about the essential role of computing scientists in future quantum computing development\, with a focus on the methodologies for transferring the knowledge we have learned in building classical computing systems to the new context. In particular\, I will introduce our recent compiler work towards both near-term and long-term quantum computing\, e.g.\, general compiler support with efficient qubit mapping\, domain-specific compiler designs enabled by new intermediate representations\, communication-centric compiler optimization for distributed quantum computing\, and automatic surface code synthesis towards future fault-tolerant quantum computing. I will also briefly cover our studies in quantum programming language and quantum architecture.
+URL:https://qucs.info/lectures/54-quantum-computing-systems-challenges-and-opportunities
+END:VEVENT
+END:VCALENDAR

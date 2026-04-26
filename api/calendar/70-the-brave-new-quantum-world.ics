@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:70-the-brave-new-quantum-world@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20250424T080000
+DTEND:20250424T100000
+SUMMARY:Lec70|The Brave New (Quantum) World|Anupam Chattopadhyay-Nanyang Technological University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Major advances across all the design stack of Quantum computing – algorithm\, software\, and hardware – has brought us to a realm where\, it is impossible to ignore the effect of Quantum computing in the world around us. We will present two aspects of Quantum computing in this talk. First\, efficient circuit design and automation challenges – and how we can borrow some knowledge from classical computing for that. We will conclude this part with case studies on experimental Quantum computers. Second\, the most important practical threat from a large-scale Quantum computer is on public-key cryptography. This is countered by developing and standardizing Post-Quantum Cryptography (PQC) primitives. We will discuss about various PQC candidates and the perils of migration to a Quantum-safe environment.
+URL:https://qucs.info/lectures/70-the-brave-new-quantum-world
+END:VEVENT
+END:VCALENDAR

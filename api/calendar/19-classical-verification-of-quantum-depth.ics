@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:19-classical-verification-of-quantum-depth@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221119T080000
+DTEND:20221119T100000
+SUMMARY:Lec19|Classical Verification of Quantum Depth|Nai-Hui Chia-Rice
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Verifying if a remote server has sufficient quantum resources to demonstrate quantum advantage is a fascinating question in complexity theory as well as a practical challenge. One approach is asking the server to solve some classically intractable problem\, such as factoring. Another approach is the proof of quantumness protocols. These protocols enable a classical client to check whether a remote server can complete some classically intractable problem and thus can be used to distinguish quantum from classical computers. However\, these two approaches mainly focus on distinguishing quantum computers from classical ones. They do not directly translate into ones that separate quantum computers with different quantum resources. In this talk\, we want to go one step further by showing protocols that can distinguish machines with different quantum depths. We call such protocols Classical Verification of Quantum Depth (CVQD). Roughly speaking\, if a server has quantum circuit depth at most d\, the classical client will reject it\; otherwise\, the classical client will accept it. Note that a malicious server\, in general\, can use classical computers to cheat. Thus\, CVQD protocols shall be able to distinguish hybrid quantum-classical computers with different quantum depths. We will see two CVQD protocols: the first protocol can separate hybrid quantum-classical computers with quantum depth d and d+c (for c some fixed constant) assuming quantum LWE\, and the second protocol is a two-prover protocol that achieves sharper separation (d versus d+3).
+URL:https://qucs.info/lectures/19-classical-verification-of-quantum-depth
+END:VEVENT
+END:VCALENDAR

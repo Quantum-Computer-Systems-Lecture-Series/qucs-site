@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:46-numerical-methods-of-optimal-quantum-control@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20231108T080000
+DTEND:20231108T100000
+SUMMARY:Lec46|Numerical Methods of Optimal Quantum Control|Michael Goerz-U.S. Army Research Lab
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:At the heart of the next-level quantum technology like quantum computing lies the problem of actively controlling the dynamics of a quantum system. I will give an overview of the numerical methods of open-loop quantum control theory. These methods are based on simulating the dynamics of the system and then iteratively minimizing the value of an optimization functional\, e.g.\, a gate error. I will discuss the efficient simulation of quantum dynamics and describe the widely used gradient ascent (GRAPE) and Krotov’s methods for unconstrained quantum control. Using the QuantumControl.jl software package\, I will show an example of using semi-automatic differentiation to optimize gate entanglement. Finally\, I will give an outlook on the wider ecosystem of control methods\, the possibility to adapt to experimental constraints\, and the general design of quantum control software.
+URL:https://qucs.info/lectures/46-numerical-methods-of-optimal-quantum-control
+END:VEVENT
+END:VCALENDAR

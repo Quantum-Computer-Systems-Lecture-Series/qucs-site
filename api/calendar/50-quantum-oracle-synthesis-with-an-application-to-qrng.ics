@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:50-quantum-oracle-synthesis-with-an-application-to-qrng@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20231001T080000
+DTEND:20231001T100000
+SUMMARY:Lec50|Quantum Oracle Synthesis with an Application to QRNG|Mitch Thornton-Southern Methodist University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Several prominent quantum computing algorithms—including Grover’s search algorithm and Shor’s algorithm for finding the prime factorization of an integer—employ subcircuits termed ‘oracles’ that embed a specific instance of a mathematical function into a corresponding bijective function that is then realized as a quantum circuit representation. Designing oracles\, and particularly\, designing them to be optimized for a particular use case\, can be a non-trivial task. For example\, the challenge of implementing quantum circuits in the current era of NISQ-based quantum computers generally dictates that they should be designed with a minimal number of qubits\, as larger qubit counts increase the likelihood that computations will fail due to one or more of the qubits decohering. However\, some quantum circuits require that function domain values be preserved\, which can preclude using the minimal number of qubits in the oracle circuit. Thus\, quantum oracles must be designed with a particular application in mind. In this work\, we present methods for automatic quantum oracle synthesis. We then present an application of the method for synthesizing programmable quantum random number generators (QRNG) that obey arbitrary user-defined probability distribution functions.
+URL:https://qucs.info/lectures/50-quantum-oracle-synthesis-with-an-application-to-qrng
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:60-quantum-algorithms-for-simulating-the-dynamics-of-open-quantum-systems@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240307T080000
+DTEND:20240307T100000
+SUMMARY:Lec60|Quantum algorithms for simulating the dynamics of open quantum systems|Chunhao Wang-Pennsylvania State University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:When a quantum system interacts with the environment\, it is no longer a unitary process\, and we refer to such systems as open quantum systems. In this lecture\, I will demonstrate the different behaviors between open and closed quantum systems. In addition\, I will present some recent developments in quantum algorithms for simulating such systems.
+URL:https://qucs.info/lectures/60-quantum-algorithms-for-simulating-the-dynamics-of-open-quantum-systems
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:20-learning-and-training-in-quantum-environments@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221204T080000
+DTEND:20221204T100000
+SUMMARY:Lec20|Learning and Training in Quantum Environments|Mohsen Heidari-IU Bloomington
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum computing presents fascinating new opportunities for various applications\, including machine learning\, simulation\, and optimization. Quantum computers (QCs) are expected to push beyond the limits established by the classical laws of physics and surpass the capabilities of classical supercomputers. They leverage quantum-mechanical principles such as superposition and entanglement for computation\, information processing\, and pattern recognition. Superposition allows a system to exist in multiple states (until measurement). Entanglement facilitates non-local statistical correlations that classical models cannot produce since they violate Bell Inequalities. With such unique features\, not only quantum advantage is on the horizon\, but also a far greater capability to learn patterns from inherently quantum data by directly operating on quantum states of physical systems (e.g.\, photons or states of matter). Utilizing quantum data provides the ability to comprehend better\, predict\, and control quantum processes and opens doors to a wide range of applications in drug discovery\, communications\, security\, and even human cognition. The first part of this talk covers an introduction to foundational concepts in quantum computing. The second part focuses on learning using near-term quantum computers for classical and quantum data. Mainly\, I discuss the training of quantum neural networks (QNNs) using quantum-classical hybrid loops. I present some of the unique challenges in quantum learning due to effects such as the no-cloning principle\, measurement incompatibility\, and stochasticity of quantum. Then\, I introduce a few solutions to address such challenges\, particularly one-shot gradient-based training of QNNs suitable for near-term quantum computers with minimal qubit processing power. Lastly\, I discuss applications of QNNs in the classification of quantum states\, e.g.\, entanglement versus separability of qubits.
+URL:https://qucs.info/lectures/20-learning-and-training-in-quantum-environments
+END:VEVENT
+END:VCALENDAR

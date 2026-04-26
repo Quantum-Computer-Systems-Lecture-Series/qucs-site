@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:35-hybrid-quantumclassic-computing-for-future-network-optimization@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230423T080000
+DTEND:20230423T100000
+SUMMARY:Lec35|Hybrid Quantum-Classic Computing for Future Network Optimization|Zhu Han-Houston
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Benefited from the technology development of controlling quantum particles and constructing quantum hardware\, quantum computation has attracted more and more attention in recent years. This talk will give an introduction of quantum computing and its applications in network optimization. We first introduce the basics of quantum computing and what quantum parallelism is. Second\, we will discuss the adiabatic quantum computing math model and one real implementation\, Quadratic Unconstrained Binary Optimization (QUBO) on D-wave quantum annealer. Then we propose a hybrid quantum Benders’ decomposition algorithm for joint quantum and classic CPU computing. Finally\, we will discuss how our proposed framework can be employed in network optimization\, smart grid\, and machine learning.Zhu Han received the B.S. degree in electronic engineering from Tsinghua University\, in 1997\, and the M.S. and Ph.D. degrees in electrical and computer engineering from the University of Maryland\, College Park\, in 1999 and 2003\, respectively. From 2000 to 2002\, he was an R&D Engineer of JDSU\, Germantown\, Maryland. From 2003 to 2006\, he was a Research Associate at the University of Maryland. From 2006 to 2008\, he was an assistant professor at Boise State University\, Idaho. Currently\, he is a John and Rebecca Moores Professor in the Electrical and Computer Engineering Department as well as the Computer Science Department at the University of Houston\, Texas. Dr. Han is an NSF CAREER award recipient of 2010\, and the winner of the 2021 IEEE Kiyo Tomiyasu Award. He has been an IEEE fellow since 2014\, an AAAS fellow since 2020\, an IEEE Distinguished Lecturer from 2015 to 2018\, and an ACM Distinguished Speaker from 2022-2025. Dr. Han is also a 1% highly cited researcher since 2017.
+URL:https://qucs.info/lectures/35-hybrid-quantumclassic-computing-for-future-network-optimization
+END:VEVENT
+END:VCALENDAR

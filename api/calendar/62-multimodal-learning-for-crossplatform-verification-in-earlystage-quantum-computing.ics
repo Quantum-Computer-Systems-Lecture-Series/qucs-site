@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:62-multimodal-learning-for-crossplatform-verification-in-earlystage-quantum-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240328T080000
+DTEND:20240328T100000
+SUMMARY:Lec62|Multimodal Learning for Cross-Platform Verification in Early-Stage Quantum Computing|Yuxuan Du-Nanyang Technological University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The intersection of deep learning and quantum system certification has garnered significant attention in past years\, where the prevailing strategy within this paradigm involves utilizing measurement outcomes as data features to train deep neural networks. However\, the computational complexities associated with purely measurement-based data present formidable challenges\, particularly in scenarios involving a large number of qubits. In this presentation\, I will introduce an innovative multimodal learning approach\, acknowledging that data in many quantum certification tasks embodies two distinct modalities: measurement outcomes and classical representations of compiled circuits on explored quantum devices. We demonstrate the efficacy of our approach through validation in a critical early-stage quantum computing task—Cross-platform verification spanning up to 50 qubits. Our findings underscore the complementary nature of each modality in cross-platform verification\, thereby laying the groundwork for addressing challenges encountered in broader quantum system learning tasks. The corresponding paper is accessible on arXiv: https://arxiv.org/pdf/2311.03713.pdf.
+URL:https://qucs.info/lectures/62-multimodal-learning-for-crossplatform-verification-in-earlystage-quantum-computing
+END:VEVENT
+END:VCALENDAR

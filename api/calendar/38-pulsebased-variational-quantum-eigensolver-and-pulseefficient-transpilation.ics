@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:38-pulsebased-variational-quantum-eigensolver-and-pulseefficient-transpilation@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230515T080000
+DTEND:20230515T100000
+SUMMARY:Lec38|Pulse-based Variational Quantum Eigensolver and Pulse-Efficient Transpilation|Daniel Egger-IBM
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:State-of-the-art noisy digital quantum computers can only execute short-depth quantum circuits. Variational algorithms are a promising route to unlock the potential of noisy quantum computers since the depth of the corresponding circuits can be kept well below hardware-imposed limits. Typically\, the variational parameters correspond to virtual RZ gate angles\, implemented by phase changes of calibrated pulses. By encoding the variational parameters directly as hardware pulse amplitudes and durations we succeed in further shortening the pulse schedule and overall circuit duration. This decreases the impact of qubit decoherence and gate noise. As a demonstration\, we apply our pulse-based variational algorithm to the calculation of the ground state of different hydrogen-based molecules (H2\, H3 and H4) using IBM cross-resonance-based hardware. We observe a reduction in schedule duration of up to 5× compared to CNOT-based Ansätze\, while also reducing the measured energy. In particular\, we observe a sizable improvement of the minimal energy configuration of H3 compared to a CNOT-based variational form. Finally\, we discuss possible future developments including error mitigation schemes and schedule optimizations\, which will enable further improvements of our approach paving the way towards the simulation of larger systems on noisy quantum devices.
+URL:https://qucs.info/lectures/38-pulsebased-variational-quantum-eigensolver-and-pulseefficient-transpilation
+END:VEVENT
+END:VCALENDAR

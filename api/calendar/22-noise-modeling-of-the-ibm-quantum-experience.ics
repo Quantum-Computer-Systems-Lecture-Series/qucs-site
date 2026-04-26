@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:22-noise-modeling-of-the-ibm-quantum-experience@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221217T080000
+DTEND:20221217T100000
+SUMMARY:Lec22|Noise Modeling of the IBM Quantum Experience|Yasuo Oda-JHU
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The influence of noise in quantum dynamics is one of the main factors preventing Noisy Intermediate-Scale Quantum (NISQ) devices from performing useful quantum computations. Errors must be suppressed in order to achieve the desired levels of accuracy\, which requires a thorough understanding of the nature and interplay of the different sources of noise. In this work\, we propose an effective error model of single-qubit operations on the IBM Quantum Experience\, that possesses considerable predictive power and takes into account spatio-temporally correlated noise. Additionally\, we showcase how Quantum Noise Spectroscopy (QNS) can be used alongside other error characterization techniques\, such as T1 experiments\, to obtain a more complete error model of the system. We focus on a Hamiltonian description of the noise\, with parameters obtained from a small set of characterization experiments. We show that simulations using this error model are capable of recovering the characterization experiments’ results to a high degree of accuracy. We also successfully compare the simulations against test data consisting of experimental results of varying circuit lengths and types of implemented operations.
+URL:https://qucs.info/lectures/22-noise-modeling-of-the-ibm-quantum-experience
+END:VEVENT
+END:VCALENDAR

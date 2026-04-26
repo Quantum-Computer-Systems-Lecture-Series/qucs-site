@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:17-developing-robust-system-software-support-for-quantum-computers@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221115T080000
+DTEND:20221115T100000
+SUMMARY:Lec17|Developing Robust System Software Support for Quantum Computers|Tirthak Patel-Rice
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The field of quantum computing has observed extraordinary advances in the last decade\, including the design and engineering of quantum computers with more than a hundred qubits. While these engineering advances have been celebrated widely\, computational scientists continue to struggle to make meaningful use of existing quantum computers. This is primarily because quantum computers suffer from prohibitively high noise levels\, which lead to erroneous program outputs and limit the practical usability of quantum computers. Researchers and practitioners are actively devising theoretical and quantum hardware-based error mitigation techniques for quantum computers\; while these efforts are useful\, they do not help us realize the full potential of quantum computers. In this talk\, I will discuss a unique opportunity space for improving performance and fidelity of quantum programs from a system software perspective. In particular\, I will demonstrate how to carefully design novel system software solutions that can further the reach of hardware-only solutions and improve the usability of quantum computers.
+URL:https://qucs.info/lectures/17-developing-robust-system-software-support-for-quantum-computers
+END:VEVENT
+END:VCALENDAR

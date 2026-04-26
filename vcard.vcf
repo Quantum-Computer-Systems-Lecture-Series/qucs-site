@@ -1,0 +1,18 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Zhemin Zhang
+N;CHARSET=UTF-8:Zhang;Zhemin;;;
+NICKNAME;CHARSET=UTF-8:Hisen
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:hisenzhang01@gmail.com
+TEL;TYPE=CELL:+1-518-368-5737
+TITLE;CHARSET=UTF-8:Research Assistant
+ROLE;CHARSET=UTF-8:Ph.D. Student
+ORG;CHARSET=UTF-8:The Chinese University of Hong Kong
+ADR;CHARSET=UTF-8;TYPE=WORK:;;Shatin;Hong Kong;;;Hong Kong SAR
+URL;CHARSET=UTF-8:https://hisenz.com
+URL;CHARSET=UTF-8;TYPE=GitHub:https://github.com/HisenZhang
+URL;CHARSET=UTF-8;TYPE=LinkedIn:https://www.linkedin.com/in/hisenzhang/
+URL;CHARSET=UTF-8;TYPE=GoogleScholar:https://scholar.google.com/citations?user=gZEopTUAAAAJ&hl=en
+NOTE;CHARSET=UTF-8:Amateur Radio Callsign: KD2TAI
+REV:2025-01-11T00:00:00Z
+END:VCARD

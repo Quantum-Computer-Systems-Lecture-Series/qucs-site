@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:55-scaling-quantum-computing-systems-via-codesign@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240118T080000
+DTEND:20240118T100000
+SUMMARY:Lec55|Scaling Quantum Computing Systems via Codesign|Kaitlin Smith-Northwestern
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The full promise of quantum computation will only be realized if quantum devices scale. In addition to pursuing devices with more qubits\, quantum researchers must 1) co-design software that pushes the frontier of existing machines and 2) build software models that guide future quantum system design toward optimal performance. Through the presentation of case studies\, this talk will discuss the challenges and opportunities involved with scaling today’s quantum computers via hardware-software codesign.
+URL:https://qucs.info/lectures/55-scaling-quantum-computing-systems-via-codesign
+END:VEVENT
+END:VCALENDAR

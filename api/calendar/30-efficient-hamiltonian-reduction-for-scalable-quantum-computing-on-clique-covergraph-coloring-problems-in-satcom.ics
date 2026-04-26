@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:30-efficient-hamiltonian-reduction-for-scalable-quantum-computing-on-clique-covergraph-coloring-problems-in-satcom@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230320T080000
+DTEND:20230320T100000
+SUMMARY:Lec30|Efficient Hamiltonian Reduction for Scalable Quantum Computing on Clique Cover/Graph Coloring Problems in SatCom|Thinh Dinh-Vietnam National University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Clique cover and graph coloring are complementary problems which have many applications in wireless communications\, especially in satellite communications (SatCom). They are NP-hard problems which are intractable for classical computers. Recently\, quantum computing has emerged as a novel technology which revolutionizes how to solve challenging optimization problems by formulating Quadratic Unconstrained Binary Optimization (QUBO)\, then preparing Hamiltonians as inputs for quantum computers. However\, due to limited hardware resources\, existing quantum computers are unable to tackle large optimization spaces. In this work\, we studied how to apply quantum computing to solve Beam Placement (BP) problems\, a variant of clique cover problem in Low-Earth Orbit (LEO) SatCom systems. We propose an efficient Hamiltonian Reduction method that allows quantum processors to solve large BP instances encountered in LEO systems. We conduct our simulations on real quantum computers (D-Wave Advantage) using a real dataset of vessel locations in the US. Numerical results show that our algorithm outperforms commercialized solutions of D-Wave by allowing existing quantum annealers to solve 17.5 times larger BP instances while maintaining high solution quality. Although quantum computing cannot theoretically overcome the hardness of BP problems\, this work contributes early efforts to applying quantum computing in satellite optimization problems\, especially applications formulated as clique cover/graph coloring problems.
+URL:https://qucs.info/lectures/30-efficient-hamiltonian-reduction-for-scalable-quantum-computing-on-clique-covergraph-coloring-problems-in-satcom
+END:VEVENT
+END:VCALENDAR

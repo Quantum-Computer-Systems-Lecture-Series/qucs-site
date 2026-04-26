@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:28-pulse-control-for-superconducting-quantum-computers@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230223T080000
+DTEND:20230223T100000
+SUMMARY:Lec28|Pulse Control for Superconducting Quantum Computers|Naoki Kanazawa-IBM Quantum
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:In superconducting quantum computer\, quantum gates are compiled down to a sequence of microwave pulses. Better understanding of pulse control techniques enable us to improve gate fidelity\, and it makes the quantum circuit execution more tolerant of noise. In this seminar\, we begin with the high-level overview of quantum electrodynamics theory to understand pulse control techniques with the experiment tools provided by the open-source software Qiskit. Several interesting research topics are also briefly introduced.
+URL:https://qucs.info/lectures/28-pulse-control-for-superconducting-quantum-computers
+END:VEVENT
+END:VCALENDAR

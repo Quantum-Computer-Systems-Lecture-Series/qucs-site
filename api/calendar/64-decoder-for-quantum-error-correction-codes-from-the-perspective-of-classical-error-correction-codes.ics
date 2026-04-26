@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:64-decoder-for-quantum-error-correction-codes-from-the-perspective-of-classical-error-correction-codes@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240425T080000
+DTEND:20240425T100000
+SUMMARY:Lec64|Decoder for quantum error correction codes: from the perspective of classical error correction codes|Tzu-Hsuan Huang-National Tsing Hua University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum error correction has become a crucial and popular topic\, especially given its essential role in ensuring the scalability and reliability of quantum computers. In this talk\, I will introduce quantum error correction from a classical error correction perspective. Additionally\, I will present our work on developing decoders for quantum codes.
+URL:https://qucs.info/lectures/64-decoder-for-quantum-error-correction-codes-from-the-perspective-of-classical-error-correction-codes
+END:VEVENT
+END:VCALENDAR

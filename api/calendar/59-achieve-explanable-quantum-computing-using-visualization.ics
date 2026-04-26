@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:59-achieve-explanable-quantum-computing-using-visualization@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240125T080000
+DTEND:20240125T100000
+SUMMARY:Lec59|Achieve Explanable Quantum Computing Using Visualization|Shaolun Ruan-Singapore Management University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum computing has made significant progress in recent years. The rapid growth in the quality and quantity of quantum computers by leading IT companies such as IBM\, Google and Amazon makes the potential quantum advantages increasingly realistic. However\, previous research has determined that grasping abstract concepts in quantum computing remains challenging. For example\, it is difficult for quantum computing developers and researchers to understand the function of each quantum gate and the final measured probability of each basis state. In this task\, Shaolun Ruan will introduce how to make users confident in the workflow of quantum computing by visualizing the inner workings of quantum circuits. Specifically\, the talk will cover visual interpretability across different directions like static quantum circuits\, quantum neural networks\, quantum states\, and the noise mitigation hidden in the IBM Quantum platform.
+URL:https://qucs.info/lectures/59-achieve-explanable-quantum-computing-using-visualization
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1-software-and-algorithmic-approaches-to-quantum-noise-mitigation-an-overview@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220708T080000
+DTEND:20220708T100000
+SUMMARY:Lec1|Software and Algorithmic Approaches to Quantum Noise Mitigation: An Overview|Yongshan Ding-Yale
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:I will talk about recent developments in noise mitigation techniques for quantum computers. In the Noisy Intermediate-Scale Quantum (NISQ) era\, qubits have short lifetimes and quantum gates are prone to errors. This talk will provide an overview of software and algorithmic approaches to mitigate quantum noise.
+URL:https://qucs.info/lectures/1-software-and-algorithmic-approaches-to-quantum-noise-mitigation-an-overview
+END:VEVENT
+END:VCALENDAR

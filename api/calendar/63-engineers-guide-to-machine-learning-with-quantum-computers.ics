@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:63-engineers-guide-to-machine-learning-with-quantum-computers@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240418T080000
+DTEND:20240418T100000
+SUMMARY:Lec63|Engineer’s Guide to Machine Learning with Quantum Computers|Ivana Nikoloska-Eindhoven University of Technology
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The ability to learn from examples is a central property of (quantum) machine intelligence. This talk will serve as an overview of quantum machine learning\, and attempt to provide a high-level blueprint for researchers aiming to enter the field. We will discuss model architectures\, training schemes\, and testing practices. In addition\, we will cover limitations in terms of barren plateaus\, as well as quantum architectures immune to trainability issues\, namely models that preserve symmetries\, with a particular focus on quantum recurrent neural networks invariant to time-warping.
+URL:https://qucs.info/lectures/63-engineers-guide-to-machine-learning-with-quantum-computers
+END:VEVENT
+END:VCALENDAR

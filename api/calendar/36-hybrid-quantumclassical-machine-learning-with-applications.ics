@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:36-hybrid-quantumclassical-machine-learning-with-applications@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230430T080000
+DTEND:20230430T100000
+SUMMARY:Lec36|Hybrid Quantum-Classical Machine Learning with Applications|Samuel Yen-Chi Chen-Wells Fargo
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The development of machine learning (ML) and quantum computing (QC) hardware has generated a lot of interest in creating quantum machine learning (QML) applications. This presentation will provide a broad overview of the hybrid quantum-classical machine learning approach\, including key concepts such as quantum gradient calculation. Additionally\, recent advancements in QML across multiple fields\, including distributed or federated learning\, natural language processing\, reinforcement learning\, and classification\, will be discussed. Potential benefits\, scalability\, and use cases of QML in the NISQ era will also be covered.
+URL:https://qucs.info/lectures/36-hybrid-quantumclassical-machine-learning-with-applications
+END:VEVENT
+END:VCALENDAR

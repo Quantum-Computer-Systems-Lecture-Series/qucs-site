@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:56-odegen-analytic-gradients-of-quantum-pulse-programs@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240118T080000
+DTEND:20240118T100000
+SUMMARY:Lec56|ODEgen: Analytic Gradients of Quantum Pulse Programs|Korbinian Kottmann-Xanadu
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:We introduce ODEgen\, a new method for evaluating analytic gradients of quantum pulse programs and contrast it with the stochastic parameter-shift rule. You will see numerics highlighting the advantages of ODEgen\, discussion of the required quantum resources and see code snippets on how to easily use these methods in PennyLane.
+URL:https://qucs.info/lectures/56-odegen-analytic-gradients-of-quantum-pulse-programs
+END:VEVENT
+END:VCALENDAR

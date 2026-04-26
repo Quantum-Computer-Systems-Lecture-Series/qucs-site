@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:4-enabling-parallel-circuit-execution-on-nisq-hardware@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220809T080000
+DTEND:20220809T100000
+SUMMARY:Lec4|Enabling Parallel Circuit Execution on NISQ Hardware|Siyuan Niu-Montpellier
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Today’s quantum computers are in the Noisy Intermediate-Scale Quantum era and prone to errors. Only small circuits with shallow depth can be executed on NISQ hardware to get reliable results\, which leads to the quantum hardware under-utilization issue. Parallel circuit execution can help improve the hardware resource utilization and reduce the total runtime of the circuits. However\, the parallel operations can introduce crosstalk error. In this talk\, I first explain crosstalk and how to characterize it on the quantum computer. Then\, I discuss the design challenges and methods to enable parallel circuit execution. Finally\, I provide several applications of parallel circuit execution on advancing NISQ computing.
+URL:https://qucs.info/lectures/4-enabling-parallel-circuit-execution-on-nisq-hardware
+END:VEVENT
+END:VCALENDAR

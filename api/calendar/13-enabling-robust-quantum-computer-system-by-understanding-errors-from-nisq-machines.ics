@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:13-enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221023T080000
+DTEND:20221023T100000
+SUMMARY:Lec13|Enabling robust quantum computer system by understanding errors from NISQ machines|Qiang Guan-Kent State
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The growth of the need for quantum computers in many domains such as machine learning\, numerical scientific simulation\, and finance has urged quantum computers to produce more stable and less error-prone results. However\, mitigating the impact of the noise inside each quantum device remains a present challenge. In this project\, we utilize the system calibration data collected from the existing IBMQ machines\, applying fidelity degradation detection to generate the fidelity degradation matrix. Based on the fidelity degradation matrix\, we define multiple new evaluation metrics to compare the fidelity between the qubit topology of the quantum machines fidelity of qubits on the same topology\, and to search for the most error-robust machine so that users can expect the most accurate results and study the insight of correlation between qubits that may further motivate the quantum compiler design for the qubit mapping. Besides\, we build a visualization system VACSEN to illustrate the errors and reliability of the quantum computing backend.
+URL:https://qucs.info/lectures/13-enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines
+END:VEVENT
+END:VCALENDAR

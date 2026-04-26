@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:5-design-automation-and-software-tools-for-quantum-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220809T080000
+DTEND:20220809T100000
+SUMMARY:Lec5|Design Automation and Software Tools for Quantum Computing|Robert Wille-Technische Universität München
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum computing is becoming a reality\, but automated methods and software tools for this technology are just beginning. The talk aims to provide an overview of automated and efficient methods for developing quantum computing\, e.g.\, for simulating\, compiling\, or verifying quantum circuits. Design automation quantum computing will take advantage of design automation techniques that have proven to be powerful for traditional circuits and systems\, but are difficult to exploit in quantum computing.
+URL:https://qucs.info/lectures/5-design-automation-and-software-tools-for-quantum-computing
+END:VEVENT
+END:VCALENDAR

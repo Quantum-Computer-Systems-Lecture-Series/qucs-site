@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:27-understanding-quantum-supremacy-conditions-for-gaussian-boson-sampling-with-high-performance-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230216T080000
+DTEND:20230216T100000
+SUMMARY:Lec27|Understanding Quantum Supremacy Conditions for Gaussian Boson Sampling with High Performance Computing|Minzhao Liu-UChicago
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Recent quantum supremacy experiments demonstrated with boson sampling garnered significant attention\, while efforts to perfect approximate classical simulation techniques challenge supremacy claims on different fronts. Single-photon boson sampling has been proven to be efficiently simulable due to the limited growth of entanglement entropy\, under the condition that the loss rate scales with the input photon number rapidly. However\, similar studies for gaussian boson sampling remained difficult due to the increased Hilbert space dimensionality. We develop a graphical processing unit-accelerated algorithm and increase the algorithm parallelism to exploit high-performance computing resources\, reducing the time-to-solution significantly. With the new capability\, we numerically observe similar entanglement entropy plateaus and reductions as input mode numbers increase under certain loss scalings. Additionally\, we observe the non-trivial effects of squeezing parameters on entanglement entropy scaling. These new findings shed light on the conditions under which gaussian boson sampling is classically intractable.
+URL:https://qucs.info/lectures/27-understanding-quantum-supremacy-conditions-for-gaussian-boson-sampling-with-high-performance-computing
+END:VEVENT
+END:VCALENDAR

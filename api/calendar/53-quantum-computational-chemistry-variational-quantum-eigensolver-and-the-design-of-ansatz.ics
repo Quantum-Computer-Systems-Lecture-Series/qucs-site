@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:53-quantum-computational-chemistry-variational-quantum-eigensolver-and-the-design-of-ansatz@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240118T080000
+DTEND:20240118T100000
+SUMMARY:Lec53|Quantum Computational Chemistry: Variational Quantum Eigensolver and the Design of Ansatz|Weitang Li-Tencent Quantum Lab
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Over the past decade\, quantum computing has experienced remarkable growth and development\, opening up new possibilities for simulating molecular properties. In this talk\, I will provide an overview of the fundamental concepts of quantum chemistry and the variational quantum eigensolver (VQE) algorithm. I will place particular emphasis on recent advancements in parameterized quantum circuits for VQE\, including the unitary coupled-cluster (UCC) ansatz and the hardware-efficient ansatz (HEA). The talk will conclude with an optimistic estimation of the resources required to achieve quantum advantage.
+URL:https://qucs.info/lectures/53-quantum-computational-chemistry-variational-quantum-eigensolver-and-the-design-of-ansatz
+END:VEVENT
+END:VCALENDAR

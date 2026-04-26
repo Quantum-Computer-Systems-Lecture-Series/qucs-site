@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:7-quantum-data-center@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220820T080000
+DTEND:20220820T100000
+SUMMARY:Lec7|Quantum Data Center|Junyu Liu-UChicago
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:We propose the Quantum Data Center (QDC)\, an architecture combining Quantum Random Access Memory (QRAM) and quantum networks. We give a precise definition of QDC\, and discuss its possible realizations and extensions. We discuss applications of QDC in quantum computation\, quantum communication\, and quantum sensing\, with a primary focus on QDC for T-gate resources\, QDC for multi-party private quantum communication\, and QDC for distributed sensing through data compression. We show that QDC will provide efficient\, private\, and fast services as a future version of data centers.
+URL:https://qucs.info/lectures/7-quantum-data-center
+END:VEVENT
+END:VCALENDAR

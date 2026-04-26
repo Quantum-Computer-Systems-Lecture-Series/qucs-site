@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:37-elevating-quantum-compiler-performance-through-enhanced-awareness-in-the-compilation-stages@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230507T080000
+DTEND:20230507T100000
+SUMMARY:Lec37|Elevating Quantum Compiler Performance through Enhanced Awareness in the Compilation Stages|Ji Liu-Argonne National Laboratory
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum compiler plays a critical role in practical quantum compilation\, particularly in the Noise-Intermediate-Scale-Quantum (NISQ) era. With limited number of qubits/connectivity and the presence of noisy quantum operations\, it is crucial to leverage the quantum compiler to optimize circuits and map them onto the target hardware. The talk will first provide an overview of the quantum compilation flow and highlight the important stages in the process. The second and the third parts of this talk will delve deeper into these stages\, focusing on optimizing the gate decomposition and qubit routing stage by bringing more cross-stage awareness in the compiler. At last\, the talk will cover our recent work on Permutation-Aware Mapping (PAM). PAM exploits the optimization and mapping potential of synthesis with block-level routing heuristics. We show that the PAM framework significantly reduces the routing overhead and may outperform the optimal routing algorithms that minimize the SWAP gate overhead. Additionally\, PAM generates the best-known implementations for important algorithms like Quantum Fourier Transform (QFT) and Transverse Field Ising Model (TFIM).
+URL:https://qucs.info/lectures/37-elevating-quantum-compiler-performance-through-enhanced-awareness-in-the-compilation-stages
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:57-numerical-quantum-control-scalable-gate-design-and-calibration@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20240118T080000
+DTEND:20240118T100000
+SUMMARY:Lec57|Numerical Quantum Control: Scalable Gate Design and Calibration|Daniel Puzzuoli-IBM
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The goal of numerical quantum control is to automate the gate design process\, with the promise of rapid and flexible gate design for arbitrary systems. While many methods exist for performing model-based numerical optimizations\, the reliable application of optimized gates to experiment remains a major limiting factor. We will discuss the primary challenges associated with experimental application\, with a focus on scalability to systems with many qubits. In particular\, we will discuss the challenge calibration\, and present a recently-developed method to enable more efficient calibration of numerically designed gates.
+URL:https://qucs.info/lectures/57-numerical-quantum-control-scalable-gate-design-and-calibration
+END:VEVENT
+END:VCALENDAR

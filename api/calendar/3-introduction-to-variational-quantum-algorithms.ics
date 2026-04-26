@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:3-introduction-to-variational-quantum-algorithms@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220721T080000
+DTEND:20220721T100000
+SUMMARY:Lec3|Introduction to Variational Quantum Algorithms|Jinglei Cheng-USC
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:A lecture by Jinglei Cheng on quantum computing.
+URL:https://qucs.info/lectures/3-introduction-to-variational-quantum-algorithms
+END:VEVENT
+END:VCALENDAR

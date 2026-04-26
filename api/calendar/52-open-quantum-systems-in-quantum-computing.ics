@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:52-open-quantum-systems-in-quantum-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20231230T080000
+DTEND:20231230T100000
+SUMMARY:Lec52|Open Quantum Systems in Quantum Computing|Xiantao Li-Penn State
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum dynamics in real-world scenarios seldom stand alone\; they occur under the continuous influence of surrounding environments. One important example is the quantum computers&#39\; gate operations\, which are subject to environment noise. This noise can subsequently deviate the intended outcomes by the quantum algorithm. Consequently\, the dynamics of open quantum systems describes a broader range of problems than the conventionally known time-dependent Schrödinger equation. In this presentation\, we will show how models for open quantum systems can be derived\, and how they can be simulated on quantum computers.
+URL:https://qucs.info/lectures/52-open-quantum-systems-in-quantum-computing
+END:VEVENT
+END:VCALENDAR

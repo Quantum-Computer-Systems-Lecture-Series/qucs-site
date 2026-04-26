@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:41-the-nonequilibrium-cost-of-accuracy@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230926T080000
+DTEND:20230926T100000
+SUMMARY:Lec41|The Nonequilibrium Cost of Accuracy|Giulio Chiribella-University of Hong Kong
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Accurate information processing is crucial both in technology and in nature. To achieve it\, any information processing system needs an initial supply of resources away from thermal equilibrium. In this talk\, I will discuss the in-principle limits on the accuracy achievable with a given amount of nonequilibrium resources. Specifically\, I will present a limit based on an entropic quantity\, named the reverse entropy\, associated to a time reversal of the information processing task under consideration. The limit is achievable for all deterministic classical computations and for all their quantum extensions. As an application\, I will show the optimal tradeoffs between nonequilibrium and accuracy for thel tasks of storing\, transmitting\, cloning\, and erasing information. These results set a target for the design of new devices approaching the ultimate efficiency limit\, and provide a framework for demonstrating thermodynamical advantages of genuine quantum information processing.
+URL:https://qucs.info/lectures/41-the-nonequilibrium-cost-of-accuracy
+END:VEVENT
+END:VCALENDAR

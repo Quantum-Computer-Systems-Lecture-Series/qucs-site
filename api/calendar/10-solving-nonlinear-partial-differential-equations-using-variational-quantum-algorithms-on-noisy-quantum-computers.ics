@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:10-solving-nonlinear-partial-differential-equations-using-variational-quantum-algorithms-on-noisy-quantum-computers@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220908T080000
+DTEND:20220908T100000
+SUMMARY:Lec10|Solving Nonlinear Partial Differential Equations using Variational Quantum Algorithms on Noisy Quantum Computers|Yilian Liu-Cornell
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Partial differential equations (PDEs) have long been the center of interest to system modeling in many disciplines of science and engineering\, such as computational physics\, fluid mechanics\, and quantitative finance. However\, as system sizes grow\, PDEs\, particularly nonlinear PDEs\, quickly become intractable to solve using classical computation. Therefore\, quantum computers are a natural candidate for solving large systems of equation as the number of grid points increases exponentially with the number of qubits. Variational quantum algorithms (VQA) have been proposed to solve nonlinear PDEs on noisy intermediate-scale quantum devices. In this talk\, we will discuss some proposed approaches for solving nonlinear PDEs using VQA and the challenges of each approach\, such as ansatz design and optimization. No prior knowledge of quantum computation is required.
+URL:https://qucs.info/lectures/10-solving-nonlinear-partial-differential-equations-using-variational-quantum-algorithms-on-noisy-quantum-computers
+END:VEVENT
+END:VCALENDAR

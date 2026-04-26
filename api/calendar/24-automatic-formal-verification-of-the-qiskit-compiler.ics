@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:24-automatic-formal-verification-of-the-qiskit-compiler@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230116T080000
+DTEND:20230116T100000
+SUMMARY:Lec24|Automatic Formal Verification of the Qiskit Compiler|Runzhou Tao-Columbia
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum compilers are essential in the quantum software stack but are error-prone. Elliminating bugs in quantum compilers is crucial for the success of near-term quantum computation. In this talk\, we presents Giallar\, a fully-automated verification toolkit for quantum compilers to formally prove that the compiler is bug-free. Giallar requires no manual specifications\, invariants\, or proofs\, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers\, Giallar abstracts three loop templates\, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation\, Giallar introduces a symbolic representation for quantum circuits and a set of rewrite rules for showing the equivalence of symbolic quantum circuits. With Giallar\, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler\, the open-source quantum compiler standard\, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.
+URL:https://qucs.info/lectures/24-automatic-formal-verification-of-the-qiskit-compiler
+END:VEVENT
+END:VCALENDAR

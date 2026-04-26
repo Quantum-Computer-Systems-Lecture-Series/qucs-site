@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:18-enabling-deeper-quantum-compiler-optimization-at-high-level@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221119T080000
+DTEND:20221119T100000
+SUMMARY:Lec18|Enabling Deeper Quantum Compiler Optimization at High Level|Gushu Li-UPenn
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:A quantum compiler is one essential and critical component in a quantum computing system to deploy and optimize the quantum programs onto the underlying physical quantum hardware platforms. Yet\, today’s quantum compilers are still far from optimal. One reason is that most optimizations in today’s quantum compilers are local program transformations over very few qubits and gates. In general\, it is highly non-trivial for a compiler that runs on a classical computer to automatically derive large-scale program optimizations at the gate-level.In this talk\, we will discuss how we can systematically enhance the quantum compilers by introducing high-level program optimizations in the quantum software/compiler infrastructure. Instead of optimizing the quantum programs at the gate level\, we design new quantum programming language primitives and intermediate representations that can maintain high-level properties of the programs. These high-level properties can then be leveraged to derive new large-scale quantum compiler optimizations beyond the capabilities of gate-level optimizations. In particular\, we will introduce optimizing quantum simulation programs over a Pauli string based intermediate representation\, mapping surface code onto superconducting architectures\, and quantum program testing/error mitigation through projection-based quantum assertions. We believe that the high-level optimization approach can also be applicable to other quantum application domains and algorithmic properties.Mr. Gushu Li is an incoming Assistant Professor at the Department of Computer and Information Science\, University of Pennsylvania. He is currently a Ph.D. candidate at the University of California\, Santa Barbara\, advised by Prof. Yuan Xie and Prof. Yufei Ding. His research features the emerging quantum computer system and spans mainly across the quantum programming language\, quantum compiler\, and quantum computer architecture. His research has been recognized by the ACM SIGPLAN Distinguished Paper Award at OOPSLA 2020 and an NSF Quantum Information Science and Engineering Network Fellow Grant Award. His research outputs have been adopted by several industry/academia quantum software frameworks\, including IBM’s Qiskit\, Amazon’s Braket\, Quantinuum’s t|ket>\, and Oak Ridge National Lab’s qcor.
+URL:https://qucs.info/lectures/18-enabling-deeper-quantum-compiler-optimization-at-high-level
+END:VEVENT
+END:VCALENDAR

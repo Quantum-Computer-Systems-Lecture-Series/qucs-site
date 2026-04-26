@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:21-quantum-machine-learning-theoretical-foundations-and-applications-on-nisq-devices@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221217T080000
+DTEND:20221217T100000
+SUMMARY:Lec21|Quantum Machine Learning: Theoretical Foundations and Applications on NISQ Devices|Jun Qi-Fudan
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum machine learning (QML) is a trailblazing research subject that integrates quantum computing and machine learning. With recent advances in quantum computing\, we have witnessed the NISQ era which admits as many as a few hundred qubits available for our QML applications\, particularly based on variational quantum circuits (VQC). This talk first reviews our pioneering research of VQC-based QML approaches in reinforcement learning\, speech recognition\, and natural language processing. Then\, we characterize the theoretical foundations of VQC and also improve the representation and generalization powers of VQC by proposing an end-to-end TTN-VQC model. Moreover\, we further characterize the hybrid quantum-classical neural network in the context of Meta-learning.
+URL:https://qucs.info/lectures/21-quantum-machine-learning-theoretical-foundations-and-applications-on-nisq-devices
+END:VEVENT
+END:VCALENDAR

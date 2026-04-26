@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:14-compilation-for-nearterm-quantum-computing-gap-analysis-and-optimal-solution@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221027T080000
+DTEND:20221027T100000
+SUMMARY:Lec14|Compilation for Near-Term Quantum Computing: Gap Analysis and Optimal Solution|Bochen Tan-UCLA
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The most challenging stage in compilation for near-term quantum computing is qubit mapping\, also called layout synthesis\, where qubits in quantum programs are mapped to physical qubits. In order to understand the quality of existing solutions\, we apply the measure-improve methodology\, which has been successful in classical circuit placement\, to this problem. We construct quantum mapping examples with known optimal\, QUEKO\, to measure the optimality gaps of leading heuristic compilers. On the revelation of large gaps\, we set out to close them with optimal layout synthesis for quantum computing\, OLSQ\, a more efficient formulation of the qubit mapping problem into mathematical programming. We accelerate OLSQ with the transition mode and expand its solution space with domain-specific knowledge on applications like quantum approximate optimization algorithm\, QAOA.
+URL:https://qucs.info/lectures/14-compilation-for-nearterm-quantum-computing-gap-analysis-and-optimal-solution
+END:VEVENT
+END:VCALENDAR

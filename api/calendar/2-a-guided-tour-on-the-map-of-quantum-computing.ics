@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:2-a-guided-tour-on-the-map-of-quantum-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220720T080000
+DTEND:20220720T100000
+SUMMARY:Lec2|A Guided Tour on the Map of Quantum Computing|Zhixin Song-Gatech
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:A lecture by Zhixin Song on quantum computing.
+URL:https://qucs.info/lectures/2-a-guided-tour-on-the-map-of-quantum-computing
+END:VEVENT
+END:VCALENDAR

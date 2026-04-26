@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:66-coordinating-decisions-via-quantum-telepathy@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20250213T080000
+DTEND:20250213T100000
+SUMMARY:Lec66|Coordinating Decisions via Quantum Telepathy|Dawei Ding-Tsinghua University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum telepathy is the phenomenon where two non-communicating parties can exhibit correlated behaviors that are impossible to achieve using classical mechanics. This is also known as Bell inequality violation and is made possible by quantum entanglement. In this work\, we present a conceptual framework for applying quantum telepathy to real-world problems. In general\, the problems involve coordinating decisions given a set of observations without being able to communicate. We argue this inability is actually quite prevalent in the modern era where the decision-making timescales of computer processors are so short that the speed of light delay is actually quite appreciable in comparison. We highlight the example of high-frequency trading (HFT)\, where trades are made at microsecond timescales\, but the speed of light delay between different exchanges can range from the order of 100 microseconds to 10 milliseconds. Due to the maturity of Bell inequality violation experiments\, experimental realization of quantum telepathy schemes that can attain a quantum advantage for real-world problems is already almost immediately possible. We demonstrate this by conducting a case study for a concrete HFT scenario that gives rise to a generalization of the CHSH game and evaluate different possible physical implementations for achieving a quantum advantage. It is well known that Bell inequality violation is a rigorous mathematical proof of a quantum advantage over any classical strategy and does not need any complexity-theoretic assumptions such as BQP≠BPP. Moreover\, fault tolerance is not necessary to realize a quantum advantage: for example\, violating the CHSH inequality only requires single-qubit gates applied on two entangled physical qubits.&nbsp\;
+URL:https://qucs.info/lectures/66-coordinating-decisions-via-quantum-telepathy
+END:VEVENT
+END:VCALENDAR

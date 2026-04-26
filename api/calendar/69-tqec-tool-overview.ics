@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:69-tqec-tool-overview@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20250410T080000
+DTEND:20250410T100000
+SUMMARY:Lec69|TQEC Tool Overview|Austin Fowler-Google Quantum AI
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Compiling a quantum algorithm to run on a quantum computer consisting of a 2D array of qubits with only nearest neighbor interactions is a complex problem. Topological Quantum Error Correction (TQEC) is used to achieve fault-tolerant quantum computation. There is a group of enthusiasts building an open source tool called TQEC (https://github.com/tqec/tqec/). The group meets regularly to help educate people about TQEC and work on software to tackle the 2D nearest neighbor quantum compiling problem. Come along and find out what this tool can already do\, and how you can get involved to deepen your understanding of TQEC and extend the capabilities of the tool.
+URL:https://qucs.info/lectures/69-tqec-tool-overview
+END:VEVENT
+END:VCALENDAR

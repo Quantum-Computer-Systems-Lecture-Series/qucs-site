@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:42-align-or-not-align-design-quantum-approximate-operator-ansatz-qaoa-with-applications-in-constrained-optimization@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20231206T080000
+DTEND:20231206T100000
+SUMMARY:Lec42|Align or Not Align? Design Quantum Approximate Operator Ansatz (QAOA) with Applications in Constrained Optimization|Zichang He-JPMorgan
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Combinatorial optimization has been one of most promising use cases of the near-term quantum computers. To facilitate its practical utils\, the encoding of practical constraints is an important task. The quantum approximate operator ansatz (QAOA)\, an extension of the well-known quantum approximate optimization algorithm\, is one of the leading quantum algorithms in constrained optimization. Within a high-depth QAOA\, quantum adiabatic theorem inspires an alignment between the initial state and the mixer operator. However\, the low-depth QAOA mechanism and ansatz design remains less explored. In this talk\, we will validate that the alignment effect continues to improves the QAOA performance even in the low-depth regime. We take portfolio optimization as a comprehensive case study\, where the hamming wight constraint is encoded by XY mixers. Furthermore\, we demonstrate these findings in a 32-asset problem utilizing Quantinuum’s system model H2 device. To the best of our knowledge\, this is the largest-scale QAOA demonstration in a universal quantum computer to date.
+URL:https://qucs.info/lectures/42-align-or-not-align-design-quantum-approximate-operator-ansatz-qaoa-with-applications-in-constrained-optimization
+END:VEVENT
+END:VCALENDAR

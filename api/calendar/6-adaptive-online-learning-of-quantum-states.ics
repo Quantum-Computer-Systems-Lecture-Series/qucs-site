@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:6-adaptive-online-learning-of-quantum-states@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20220811T080000
+DTEND:20220811T100000
+SUMMARY:Lec6|Adaptive Online Learning of Quantum States|Tongyang Li-Peking University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Shadow tomography is a fundamental problem in quantum computing\, whose goal is to efficiently learn an unknown d-dimensional quantum state using projective measurements. However\, it is rarely the case that the underlying state remains stationary: changes may occur due to measurements\, environmental noise\, or an underlying Hamiltonian state evolution. In this paper we adopt tools from adaptive online learning to learn a changing state\, giving adaptive and dynamic regret bounds for online shadow tomography that are polynomial in the number of qubits and sublinear in the number of measurements. In addition\, our numerical experiments also corroborate our theories. In the future\, it is of general interest to find applications of adaptive online learning to quantum computing in the NISQ era\, including quantum machine learning\, noise mitigation\, etc. The paper is available on arXiv: https://arxiv.org/abs/2206.00220
+URL:https://qucs.info/lectures/6-adaptive-online-learning-of-quantum-states
+END:VEVENT
+END:VCALENDAR

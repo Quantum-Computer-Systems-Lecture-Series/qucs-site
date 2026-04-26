@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:29-rethinking-mostsignificant-digitfirst-arithmetic-for-quantum-computing-in-nisq-era@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230301T080000
+DTEND:20230301T100000
+SUMMARY:Lec29|Rethinking Most-significant Digit-first Arithmetic for Quantum Computing in NISQ Era|He Li-Southeast University (China)
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:In recent years\, quantum computers have attracted extensive research interest due to their potential capability of solving problems which are not easily solvable using classical computers. In parallel to the constant research aiming at the physical implementation of quantum processors\, quantum algorithms\, such as Shor’s algorithm and quantum linear algebra and quantum machine learning algorithms\, have been actively developed for real-life applications to show quantum advantages\, many of which benefit from quantum arithmetic algorithms and their efficient implementations. Although various least-significant digit-first quantum arithmetic operators have been introduced in literature\, interest in investigating the efficient implementation of most-significant digit-first (MSDF) arithmetic is growing. In this talk\, we first review of quantum arithmetic circuits design\, and then present a novel design space exploration method to implement quantum most-significant digit-first arithmetic operators\, taking quantum MSDF addition as a case study to demonstrate low qubits\, low quantum gates usage and low quantum circuit depth architectures. Scalability and quantitative comparisons for different quantum arithmetic circuits will also be discussed.
+URL:https://qucs.info/lectures/29-rethinking-mostsignificant-digitfirst-arithmetic-for-quantum-computing-in-nisq-era
+END:VEVENT
+END:VCALENDAR

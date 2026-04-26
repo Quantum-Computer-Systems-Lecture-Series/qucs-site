@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:43-a-structured-method-for-compilation-of-qaoa-circuits-in-quantum-computing@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20231206T080000
+DTEND:20231206T100000
+SUMMARY:Lec43|A Structured Method for Compilation of QAOA Circuits in Quantum Computing|Zheng Zhang-Rutgers
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Zheng (Eddy) Zhang is an Associate Professor at Rutgers University. Her research is in compilers\, systems\, and quantum computing. Her recent work dealt with the synergistic interaction between quantum applications\, programming languages\, intermediate representation\, compilers\, and micro-architecture for NISQ computing devices. She will be talking about a paper that will appear in ASPLOS 2024.Bio: Contact the speaker:
+URL:https://qucs.info/lectures/43-a-structured-method-for-compilation-of-qaoa-circuits-in-quantum-computing
+END:VEVENT
+END:VCALENDAR

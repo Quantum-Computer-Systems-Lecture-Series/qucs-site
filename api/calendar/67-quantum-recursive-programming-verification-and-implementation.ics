@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:67-quantum-recursive-programming-verification-and-implementation@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20250220T080000
+DTEND:20250220T100000
+SUMMARY:Lec67|Quantum Recursive Programming: Verification and Implementation|Zhicheng Zhang-University of Technology Sydney
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum recursive programming has recently been introduced for describing sophisticated and complicated quantum algorithms in a compact and elegant way. In this talk\, I will introduce how to verify and implement quantum recursive programs. (a) For the verification part\, I will present a proof system that uses Hoare triples to formally reason about the correctness of quantum recursive programs. (b) For the implementation part\, I will introduce an architecture called quantum register machine. Based on it\, I will describe a comprehensive implementation process that includes compilation\, partial evaluation\, and execution of quantum recursive programs.These two parts are based on the following joint works with Mingsheng Ying: https://arxiv.org/abs/2404.05934 and https://arxiv.org/abs/2408.10054.
+URL:https://qucs.info/lectures/67-quantum-recursive-programming-verification-and-implementation
+END:VEVENT
+END:VCALENDAR

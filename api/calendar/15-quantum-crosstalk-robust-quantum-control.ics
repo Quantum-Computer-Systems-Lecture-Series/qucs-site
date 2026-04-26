@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:15-quantum-crosstalk-robust-quantum-control@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20221101T080000
+DTEND:20221101T100000
+SUMMARY:Lec15|Quantum Crosstalk Robust Quantum Control|Zeyuan Zhou-JHU
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The prevalence of quantum crosstalk in current quantum devices poses challenges to achieving high-fidelity quantum logic operations and reliable quantum processing. Through quantum control theory\, we develop an analytical condition for achieving crosstalk-robust single-qubit control of multi-qubit systems. We examine the effects of quantum crosstalk via a cumulant expansion approach and develop a condition to suppress the leading order contributions to the dynamics. The efficacy of the condition is illustrated in the domains of quantum state preservation and noise characterization through the development of crosstalk-robust dynamical decoupling (DD) and quantum noise spectroscopy (QNS) protocols. Using the IBM Quantum Experience superconducting qubits\, crosstalk-robust state preservation is demonstrated on 27 qubits\, where a 3× improvement in coherence decay is observed for single-qubit product and multipartite entangled states. Through the use of noise injection\, we experimentally demonstrate the first known parallel crosstalk-robust dephasing QNS on a seven-qubit processor\, where a 10^4 improvement in reconstruction accuracy over “cross-susceptible” alternatives is found. Together\, these experiments highlight the significant impact the crosstalk mitigation condition can have on improving multi-qubit characterization and control on current quantum devices. In this talk\, I will go through the theoretical framework we leveraged which enables the co-suppression of quantum crosstalk and system-environment noise. For the second part\, I will discuss a wide range of applications on near-term devices from physical layer control and characterization to robust algorithms design and logical encoding.
+URL:https://qucs.info/lectures/15-quantum-crosstalk-robust-quantum-control
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:33-quantum-graphical-calculi-tutorial-and-applications@qucs.info
+DTSTAMP:20260426T173737Z
+DTSTART:20230407T080000
+DTEND:20230407T100000
+SUMMARY:Lec33|Quantum Graphical Calculi: Tutorial and Applications|Lia Yeh-Oxford
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum computing and quantum communication provide potential speed-up and enhanced security compared with their classical counterparts. However\, the analysis of quantum algorithms and protocols is notoriously difficult. Furthermore\, due to the lack of reliable and scalable quantum hardware\, traditional techniques such as testing and debugging in classical software engineering will not be readily available in the near future\, while static analysis of quantum programs based on formal methods seems indispensable. In this talk\, I will introduce Hoare logic\, a syntax-oriented method for reasoning about program correctness which has been shown to be effective in the verification of classical and probabilistic programs. An extension of Hoare logic to a simple quantum while-language will be discussed\, and some examples will be given to illustrate its utility.
+URL:https://qucs.info/lectures/33-quantum-graphical-calculi-tutorial-and-applications
+END:VEVENT
+END:VCALENDAR
