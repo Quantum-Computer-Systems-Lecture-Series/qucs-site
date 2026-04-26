@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:38-pulsebased-variational-quantum-eigensolver-and-pulseefficient-transpilation@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230515T080000
 DTEND:20230515T100000
 SUMMARY:Lec38|Pulse-based Variational Quantum Eigensolver and Pulse-Efficient Transpilation|Daniel Egger-IBM

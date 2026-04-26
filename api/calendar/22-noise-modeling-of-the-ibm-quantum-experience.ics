@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:22-noise-modeling-of-the-ibm-quantum-experience@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20221217T080000
 DTEND:20221217T100000
 SUMMARY:Lec22|Noise Modeling of the IBM Quantum Experience|Yasuo Oda-JHU

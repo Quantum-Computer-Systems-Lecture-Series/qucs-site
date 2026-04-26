@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:40-parameter-setting-in-quantum-approximate-optimization-of-weighted-problems@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230925T080000
 DTEND:20230925T100000
 SUMMARY:Lec40|Parameter Setting in Quantum Approximate Optimization of Weighted Problems|Ruslan Shaydulin-JPMorgan

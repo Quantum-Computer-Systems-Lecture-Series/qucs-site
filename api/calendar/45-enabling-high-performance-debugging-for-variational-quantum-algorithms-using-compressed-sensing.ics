@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:45-enabling-high-performance-debugging-for-variational-quantum-algorithms-using-compressed-sensing@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20231214T080000
 DTEND:20231214T100000
 SUMMARY:Lec45|Enabling High Performance Debugging for Variational Quantum Algorithms using Compressed Sensing|Tianyi Hao-UW Madison

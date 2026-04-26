@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:8-classical-support-and-error-mitigation-for-variational-quantum-algorithms@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20220829T080000
 DTEND:20220829T100000
 SUMMARY:Lec8|Classical Support and Error Mitigation for Variational Quantum Algorithms|Gokul Ravi-UChicago

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:24-automatic-formal-verification-of-the-qiskit-compiler@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230116T080000
 DTEND:20230116T100000
 SUMMARY:Lec24|Automatic Formal Verification of the Qiskit Compiler|Runzhou Tao-Columbia

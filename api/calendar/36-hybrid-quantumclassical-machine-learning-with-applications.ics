@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:36-hybrid-quantumclassical-machine-learning-with-applications@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230430T080000
 DTEND:20230430T100000
 SUMMARY:Lec36|Hybrid Quantum-Classical Machine Learning with Applications|Samuel Yen-Chi Chen-Wells Fargo

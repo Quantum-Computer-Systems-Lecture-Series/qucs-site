@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:64-decoder-for-quantum-error-correction-codes-from-the-perspective-of-classical-error-correction-codes@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20240425T080000
 DTEND:20240425T100000
 SUMMARY:Lec64|Decoder for quantum error correction codes: from the perspective of classical error correction codes|Tzu-Hsuan Huang-National Tsing Hua University

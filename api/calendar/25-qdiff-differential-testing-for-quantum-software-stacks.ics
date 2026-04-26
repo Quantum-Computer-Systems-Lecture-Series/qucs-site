@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:25-qdiff-differential-testing-for-quantum-software-stacks@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230117T080000
 DTEND:20230117T100000
 SUMMARY:Lec25|QDiff: Differential Testing for Quantum Software Stacks|Jiyuan Wang-UCLA

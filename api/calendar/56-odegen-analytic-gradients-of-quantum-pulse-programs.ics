@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:56-odegen-analytic-gradients-of-quantum-pulse-programs@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20240118T080000
 DTEND:20240118T100000
 SUMMARY:Lec56|ODEgen: Analytic Gradients of Quantum Pulse Programs|Korbinian Kottmann-Xanadu

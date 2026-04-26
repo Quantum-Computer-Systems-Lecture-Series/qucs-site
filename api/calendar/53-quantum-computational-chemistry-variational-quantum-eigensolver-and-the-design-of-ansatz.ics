@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:53-quantum-computational-chemistry-variational-quantum-eigensolver-and-the-design-of-ansatz@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20240118T080000
 DTEND:20240118T100000
 SUMMARY:Lec53|Quantum Computational Chemistry: Variational Quantum Eigensolver and the Design of Ansatz|Weitang Li-Tencent Quantum Lab

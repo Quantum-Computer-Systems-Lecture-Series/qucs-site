@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:17-developing-robust-system-software-support-for-quantum-computers@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20221115T080000
 DTEND:20221115T100000
 SUMMARY:Lec17|Developing Robust System Software Support for Quantum Computers|Tirthak Patel-Rice

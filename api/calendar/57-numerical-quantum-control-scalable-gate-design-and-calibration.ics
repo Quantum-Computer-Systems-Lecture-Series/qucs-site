@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:57-numerical-quantum-control-scalable-gate-design-and-calibration@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20240118T080000
 DTEND:20240118T100000
 SUMMARY:Lec57|Numerical Quantum Control: Scalable Gate Design and Calibration|Daniel Puzzuoli-IBM

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:30-efficient-hamiltonian-reduction-for-scalable-quantum-computing-on-clique-covergraph-coloring-problems-in-satcom@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230320T080000
 DTEND:20230320T100000
 SUMMARY:Lec30|Efficient Hamiltonian Reduction for Scalable Quantum Computing on Clique Cover/Graph Coloring Problems in SatCom|Thinh Dinh-Vietnam National University

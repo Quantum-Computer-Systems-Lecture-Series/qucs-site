@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:50-quantum-oracle-synthesis-with-an-application-to-qrng@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20231001T080000
 DTEND:20231001T100000
 SUMMARY:Lec50|Quantum Oracle Synthesis with an Application to QRNG|Mitch Thornton-Southern Methodist University

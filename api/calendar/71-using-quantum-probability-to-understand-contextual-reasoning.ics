@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:71-using-quantum-probability-to-understand-contextual-reasoning@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20260406T080000
 DTEND:20260406T100000
 SUMMARY:Lec71|Using Quantum Probability to Understand Contextual Reasoning|Jerome Busemeyer-Indiana University

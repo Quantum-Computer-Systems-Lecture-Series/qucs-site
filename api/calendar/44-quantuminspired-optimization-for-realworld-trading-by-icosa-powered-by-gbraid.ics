@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:44-quantuminspired-optimization-for-realworld-trading-by-icosa-powered-by-gbraid@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20231206T080000
 DTEND:20231206T100000
 SUMMARY:Lec44|Quantum-Inspired Optimization for Real-World Trading by Icosa powered by gBraid|Ricky Young and Mert Esencan-QBraid and Icosa Computing

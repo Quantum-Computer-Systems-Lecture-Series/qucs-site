@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:21-quantum-machine-learning-theoretical-foundations-and-applications-on-nisq-devices@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20221217T080000
 DTEND:20221217T100000
 SUMMARY:Lec21|Quantum Machine Learning: Theoretical Foundations and Applications on NISQ Devices|Jun Qi-Fudan

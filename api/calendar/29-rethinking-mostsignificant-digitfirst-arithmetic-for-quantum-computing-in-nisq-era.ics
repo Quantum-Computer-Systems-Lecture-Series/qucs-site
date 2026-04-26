@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:29-rethinking-mostsignificant-digitfirst-arithmetic-for-quantum-computing-in-nisq-era@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20230301T080000
 DTEND:20230301T100000
 SUMMARY:Lec29|Rethinking Most-significant Digit-first Arithmetic for Quantum Computing in NISQ Era|He Li-Southeast University (China)

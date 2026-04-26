@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:48-quantum-circuit-decomposition-and-routing-collaborative-design@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20231218T080000
 DTEND:20231218T100000
 SUMMARY:Lec48|Quantum Circuit Decomposition and Routing Collaborative Design|Evan McKinney-Pittsburgh

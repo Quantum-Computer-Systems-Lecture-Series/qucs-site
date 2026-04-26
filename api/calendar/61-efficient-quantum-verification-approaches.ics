@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:61-efficient-quantum-verification-approaches@qucs.info
-DTSTAMP:20260426T180955Z
+DTSTAMP:20260426T182735Z
 DTSTART:20240321T080000
 DTEND:20240321T100000
 SUMMARY:Lec61|Efficient Quantum Verification Approaches.|Kanad Basu-University of Texas at Dallas
