@@ -8,29 +8,20 @@ import icon from 'astro-icon'
 import react from '@astrojs/react'
 import markdoc from '@astrojs/markdoc'
 import keystatic from '@keystatic/astro'
-import cloudflare from '@astrojs/cloudflare'
 import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
 import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs'
 import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 
 const env = loadEnv(process.env.NODE_ENV || 'development', process.cwd(), '')
 
-// https://astro.build/config
 export default defineConfig({
+	output: 'static',
 	site: env.PUBLIC_SITE_URL || 'https://qucs.info',
 	base: '/',
-	output: 'server',
-	adapter: cloudflare({
-		mode: 'advanced',
-		platformProxy: {
-			enabled: true
-		},
-		functionPerRoute: false
-	}),
 	integrations: [
 		react(),
 		markdoc({ allowHTML: true }),
-		keystatic(),
+		process.env.NODE_ENV !== 'production' ? keystatic() : null,
 		mdx(),
 		sitemap(),
 		icon(),
