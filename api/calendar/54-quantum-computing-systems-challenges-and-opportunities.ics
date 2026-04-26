@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:54-quantum-computing-systems-challenges-and-opportunities@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20240118T080000
 DTEND:20240118T100000
 SUMMARY:Lec54|Quantum Computing Systems: Challenges and Opportunities|Yufei Ding-UCSD

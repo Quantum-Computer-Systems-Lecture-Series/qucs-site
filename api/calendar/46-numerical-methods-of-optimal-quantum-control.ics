@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:46-numerical-methods-of-optimal-quantum-control@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231108T080000
 DTEND:20231108T100000
 SUMMARY:Lec46|Numerical Methods of Optimal Quantum Control|Michael Goerz-U.S. Army Research Lab

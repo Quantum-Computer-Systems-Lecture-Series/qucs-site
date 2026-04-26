@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:37-elevating-quantum-compiler-performance-through-enhanced-awareness-in-the-compilation-stages@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20230507T080000
 DTEND:20230507T100000
 SUMMARY:Lec37|Elevating Quantum Compiler Performance through Enhanced Awareness in the Compilation Stages|Ji Liu-Argonne National Laboratory

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:52-open-quantum-systems-in-quantum-computing@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231230T080000
 DTEND:20231230T100000
 SUMMARY:Lec52|Open Quantum Systems in Quantum Computing|Xiantao Li-Penn State

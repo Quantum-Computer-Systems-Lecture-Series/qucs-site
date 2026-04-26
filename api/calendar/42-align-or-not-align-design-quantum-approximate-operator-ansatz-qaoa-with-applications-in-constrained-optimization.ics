@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:42-align-or-not-align-design-quantum-approximate-operator-ansatz-qaoa-with-applications-in-constrained-optimization@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231206T080000
 DTEND:20231206T100000
 SUMMARY:Lec42|Align or Not Align? Design Quantum Approximate Operator Ansatz (QAOA) with Applications in Constrained Optimization|Zichang He-JPMorgan

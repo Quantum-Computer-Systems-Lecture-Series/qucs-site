@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:47-quantum-machine-learning-on-current-quantum-computers@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231214T080000
 DTEND:20231214T100000
 SUMMARY:Lec47|Quantum Machine Learning on Current Quantum Computers|Daniel Silver-Northeastern

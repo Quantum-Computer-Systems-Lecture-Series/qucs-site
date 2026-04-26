@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:6-adaptive-online-learning-of-quantum-states@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20220811T080000
 DTEND:20220811T100000
 SUMMARY:Lec6|Adaptive Online Learning of Quantum States|Tongyang Li-Peking University

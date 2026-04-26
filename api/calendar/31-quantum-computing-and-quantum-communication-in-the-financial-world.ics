@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:31-quantum-computing-and-quantum-communication-in-the-financial-world@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20230321T080000
 DTEND:20230321T100000
 SUMMARY:Lec31|Quantum Computing and Quantum Communication in the Financial World|Marco Pistoia-JPMorgan

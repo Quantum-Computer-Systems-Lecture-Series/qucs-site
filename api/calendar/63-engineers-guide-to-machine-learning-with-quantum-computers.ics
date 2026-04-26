@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:63-engineers-guide-to-machine-learning-with-quantum-computers@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20240418T080000
 DTEND:20240418T100000
 SUMMARY:Lec63|Engineer’s Guide to Machine Learning with Quantum Computers|Ivana Nikoloska-Eindhoven University of Technology

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:43-a-structured-method-for-compilation-of-qaoa-circuits-in-quantum-computing@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231206T080000
 DTEND:20231206T100000
 SUMMARY:Lec43|A Structured Method for Compilation of QAOA Circuits in Quantum Computing|Zheng Zhang-Rutgers

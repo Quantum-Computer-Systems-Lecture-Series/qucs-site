@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:51-design-automation-for-quantum-computing@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20231221T080000
 DTEND:20231221T100000
 SUMMARY:Lec51|Design Automation for Quantum Computing|Prabhat Mishra-UFlorida

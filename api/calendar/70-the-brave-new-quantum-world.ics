@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:70-the-brave-new-quantum-world@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20250424T080000
 DTEND:20250424T100000
 SUMMARY:Lec70|The Brave New (Quantum) World|Anupam Chattopadhyay-Nanyang Technological University

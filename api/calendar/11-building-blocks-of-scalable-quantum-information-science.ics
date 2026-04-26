@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:11-building-blocks-of-scalable-quantum-information-science@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20221014T080000
 DTEND:20221014T100000
 SUMMARY:Lec11|Building Blocks of Scalable Quantum Information Science|Prineha Narang-Harvard

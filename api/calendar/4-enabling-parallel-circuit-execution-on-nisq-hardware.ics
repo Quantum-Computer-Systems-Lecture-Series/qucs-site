@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:4-enabling-parallel-circuit-execution-on-nisq-hardware@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20220809T080000
 DTEND:20220809T100000
 SUMMARY:Lec4|Enabling Parallel Circuit Execution on NISQ Hardware|Siyuan Niu-Montpellier

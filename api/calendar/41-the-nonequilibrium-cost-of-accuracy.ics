@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:41-the-nonequilibrium-cost-of-accuracy@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20230926T080000
 DTEND:20230926T100000
 SUMMARY:Lec41|The Nonequilibrium Cost of Accuracy|Giulio Chiribella-University of Hong Kong

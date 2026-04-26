@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:15-quantum-crosstalk-robust-quantum-control@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20221101T080000
 DTEND:20221101T100000
 SUMMARY:Lec15|Quantum Crosstalk Robust Quantum Control|Zeyuan Zhou-JHU

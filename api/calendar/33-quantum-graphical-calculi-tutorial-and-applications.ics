@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:33-quantum-graphical-calculi-tutorial-and-applications@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20230407T080000
 DTEND:20230407T100000
 SUMMARY:Lec33|Quantum Graphical Calculi: Tutorial and Applications|Lia Yeh-Oxford

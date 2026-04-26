@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:62-multimodal-learning-for-crossplatform-verification-in-earlystage-quantum-computing@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20240328T080000
 DTEND:20240328T100000
 SUMMARY:Lec62|Multimodal Learning for Cross-Platform Verification in Early-Stage Quantum Computing|Yuxuan Du-Nanyang Technological University

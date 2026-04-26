@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:20-learning-and-training-in-quantum-environments@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20221204T080000
 DTEND:20221204T100000
 SUMMARY:Lec20|Learning and Training in Quantum Environments|Mohsen Heidari-IU Bloomington

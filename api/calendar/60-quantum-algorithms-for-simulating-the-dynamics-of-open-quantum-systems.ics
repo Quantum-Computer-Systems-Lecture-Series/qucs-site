@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:60-quantum-algorithms-for-simulating-the-dynamics-of-open-quantum-systems@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20240307T080000
 DTEND:20240307T100000
 SUMMARY:Lec60|Quantum algorithms for simulating the dynamics of open quantum systems|Chunhao Wang-Pennsylvania State University

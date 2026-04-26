@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:12-quantum-computer-hardware-cybersecurity@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20221014T080000
 DTEND:20221014T100000
 SUMMARY:Lec12|Quantum Computer Hardware Cybersecurity|Jakub Szefer-Yale

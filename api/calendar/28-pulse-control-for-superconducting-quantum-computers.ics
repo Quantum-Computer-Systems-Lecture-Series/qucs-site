@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:28-pulse-control-for-superconducting-quantum-computers@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20230223T080000
 DTEND:20230223T100000
 SUMMARY:Lec28|Pulse Control for Superconducting Quantum Computers|Naoki Kanazawa-IBM Quantum

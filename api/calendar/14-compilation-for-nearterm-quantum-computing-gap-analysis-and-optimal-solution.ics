@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:14-compilation-for-nearterm-quantum-computing-gap-analysis-and-optimal-solution@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20221027T080000
 DTEND:20221027T100000
 SUMMARY:Lec14|Compilation for Near-Term Quantum Computing: Gap Analysis and Optimal Solution|Bochen Tan-UCLA

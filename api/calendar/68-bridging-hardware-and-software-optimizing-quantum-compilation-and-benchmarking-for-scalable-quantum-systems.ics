@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:68-bridging-hardware-and-software-optimizing-quantum-compilation-and-benchmarking-for-scalable-quantum-systems@qucs.info
-DTSTAMP:20260426T173737Z
+DTSTAMP:20260426T180955Z
 DTSTART:20250320T080000
 DTEND:20250320T100000
 SUMMARY:Lec68|Bridging Hardware and Software: Optimizing Quantum Compilation and Benchmarking for Scalable Quantum Systems|Sebastian Feld-Delft University of Technology
