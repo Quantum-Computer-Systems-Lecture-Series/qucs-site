@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:73-quantum-computing-with-oscillators-and-qubits@qucs.info
+DTSTAMP:20260521T063227Z
+DTSTART:20260430T080000
+DTEND:20260430T100000
+SUMMARY:Lec73|Quantum Computing with Oscillators and Qubits|Yuan Liu-North Carolina State University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Hardware platforms based on native continuous-variable (CV\, oscillator) systems have attracted growing attention as an alternative to discrete-variable (DV\, qubit) quantum systems. In this talk\, I will highlight how hybrid CV-DV hardware offers a powerful computational paradigm by combining the complementary strengths of both CV and DV processors. I will present novel quantum control techniques and algorithms for CV-DV systems that enable new opportunities and applications in quantum error correction\, quantum simulation\, and quantum sensing. I will also highlight software tools for benchmarking and compiling these novel processors.
+URL:https://qucs.info/lectures/73-quantum-computing-with-oscillators-and-qubits
+END:VEVENT
+END:VCALENDAR

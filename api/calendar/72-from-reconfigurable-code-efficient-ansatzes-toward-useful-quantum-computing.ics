@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:72-from-reconfigurable-code-efficient-ansatzes-toward-useful-quantum-computing@qucs.info
+DTSTAMP:20260521T063227Z
+DTSTART:20260427T080000
+DTEND:20260427T100000
+SUMMARY:Lec72|From reconfigurable code-efficient ansatzes toward useful quantum computing|Yipeng Huang-Rutgers University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:The full impact of quantum computing (QC) will depend on quantum error-correcting codes (QECCs). This talk explores whether useful QC might be ushered in without waiting for the arbitrarily low logical error rates enabled by integrating millions of physical qubits. Instead\, a universal set of quantum operations might be enabled by cleverly switching among a wide family of QECCs\, some codes that provide precise rotations\, while others provide parallel operations. Based on this idea\, I present recent work on scheduling hardware operations for such a scheme and discuss how it may affect QC applications in Hamiltonian simulation. The exploration sheds light on the question: How far away is useful QC?
+URL:https://qucs.info/lectures/72-from-reconfigurable-code-efficient-ansatzes-toward-useful-quantum-computing
+END:VEVENT
+END:VCALENDAR

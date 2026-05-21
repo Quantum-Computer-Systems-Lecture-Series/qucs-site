@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:74-quantum-computing-real-world-industry-use-cases@qucs.info
+DTSTAMP:20260521T063227Z
+DTSTART:20260505T080000
+DTEND:20260505T100000
+SUMMARY:Lec74|Quantum Computing: real-world industry use cases|Gabriele Compostella-IBM Germany
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Recent advances in quantum algorithms and hardware have enabled the exploration of quantum techniques for industrially relevant challenges in optimization\, simulation and machine learning.\nThis talk will highlight IBM’s latest advancements in quantum hardware and present early experimental results from applications across multiple industry domains.\nAttendees will gain insight into the motivations driving adoption\, the classes of problems quantum computing can tackle and the opportunities it offers for shaping the future of industrial innovation.
+URL:https://qucs.info/lectures/74-quantum-computing-real-world-industry-use-cases
+END:VEVENT
+END:VCALENDAR
