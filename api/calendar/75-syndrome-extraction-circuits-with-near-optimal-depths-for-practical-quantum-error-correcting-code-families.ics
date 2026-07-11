@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:75-syndrome-extraction-circuits-with-near-optimal-depths-for-practical-quantum-error-correcting-code-families@qucs.info
+DTSTAMP:20260711T133643Z
+DTSTART:20260601T080000
+DTEND:20260601T100000
+SUMMARY:Lec75|Syndrome Extraction Circuits with Near-Optimal Depths for Practical Quantum Error Correcting Code Families|Daniel Bochen Tan-Harvard University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Fault-tolerant quantum computing relies on low-depth and high-fidelity syndrome extraction for quantum error correcting codes. We propose a scheduling strategy for syndrome extraction circuits for the broad class of quasi-abelian lifted-product codes\, encompassing both hypergraph product and bicycle codes. Our approach constructs syndrome extraction circuits with CNOT depths no more than one layer above the fundamental lower bound\, frequently achieving optimal depth. A pipelined variant further reduces the average depth per round\, and the strategy generalizes naturally to higher-dimensional product codes. This scheduling framework enables computational speedups for quantum computing architectures built on these codes\, all while preserving high-fidelity error correction.
+URL:https://qucs.info/lectures/75-syndrome-extraction-circuits-with-near-optimal-depths-for-practical-quantum-error-correcting-code-families
+END:VEVENT
+END:VCALENDAR

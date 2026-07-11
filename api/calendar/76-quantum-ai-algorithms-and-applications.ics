@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:76-quantum-ai-algorithms-and-applications@qucs.info
+DTSTAMP:20260711T133643Z
+DTSTART:20260612T080000
+DTEND:20260612T100000
+SUMMARY:Lec76|Quantum AI: Algorithms and Applications|Soohyun Park-Sookmyung Women’s University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:This course covers various Quantum AI technologies based on Parameterized Quantum Circuits (PQC)\, one of the quantum technologies that has recently attracted significant attention.\n\nTo facilitate a clear understanding of PQC-based quantum AI\, the course first introduces quantum neural network architectures by integrating fundamental concepts of classical artificial neural networks with quantum computing theory. Building upon this foundation\, the course then explores advanced Quantum AI models\, including Quantum Reinforcement Learning (QRL)\, Quantum Federated Learning (QFL)\, and Quantum Convolutional Neural Networks (QCNNs).\n\nFinally\, through representative research cases in which Quantum AI algorithms are applied across diverse domains\, the course examines the advantages of Quantum AI technologies and their potential for future research directions.
+URL:https://qucs.info/lectures/76-quantum-ai-algorithms-and-applications
+END:VEVENT
+END:VCALENDAR
