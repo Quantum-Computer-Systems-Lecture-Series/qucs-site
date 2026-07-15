@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:74-quantum-computing-real-world-industry-use-cases@qucs.info
-DTSTAMP:20260711T133643Z
+DTSTAMP:20260715T150225Z
 DTSTART:20260505T080000
 DTEND:20260505T100000
 SUMMARY:Lec74|Quantum Computing: real-world industry use cases|Gabriele Compostella-IBM Germany

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:32-hoare-logic-for-verification-of-quantum-programs@qucs.info
-DTSTAMP:20260711T133643Z
+DTSTAMP:20260715T150225Z
 DTSTART:20230323T080000
 DTEND:20230323T100000
 SUMMARY:Lec32|Hoare logic for verification of quantum programs|Yuan Feng-University of Technology Sydney
