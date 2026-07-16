@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:78-quantum-arithmetic-from-fundamental-building-blocks-to-practical-quantum-algorithms@qucs.info
+DTSTAMP:20260716T132039Z
+DTSTART:20260716T080000
+DTEND:20260716T100000
+SUMMARY:Lec78|Quantum Arithmetic: From Fundamental Building Blocks to Practical Quantum Algorithms|Siyi Wang-QUASAR-CREATE\, Singapore
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Arithmetic circuits are among the most fundamental building blocks of quantum computing. They form the computational core of many important quantum algorithms\, including Shor's algorithm\, quantum simulation\, and scientific computing. However\, implementing arithmetic on quantum computers is fundamentally different from classical computing due to reversibility\, limited qubit resources\, and the high cost of non-Clifford operations.\n\nThis talk introduces the principles behind quantum arithmetic circuit design and discusses the key challenges in optimizing quantum addition\, subtraction\, multiplication\, and division circuits. Through a series of representative examples\, the talk illustrates how careful arithmetic design can substantially reduce circuit depth\, qubit requirements\, and fault-tolerant resource costs. Finally\, it discusses how advances in quantum arithmetic contribute to making large-scale quantum algorithms more practical on future fault-tolerant quantum computers.
+URL:https://qucs.info/lectures/78-quantum-arithmetic-from-fundamental-building-blocks-to-practical-quantum-algorithms
+END:VEVENT
+END:VCALENDAR

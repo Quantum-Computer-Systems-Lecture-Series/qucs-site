@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:72-from-reconfigurable-code-efficient-ansatzes-toward-useful-quantum-computing@qucs.info
-DTSTAMP:20260715T150225Z
+DTSTAMP:20260716T132039Z
 DTSTART:20260427T080000
 DTEND:20260427T100000
 SUMMARY:Lec72|From reconfigurable code-efficient ansatzes toward useful quantum computing|Yipeng Huang-Rutgers University
