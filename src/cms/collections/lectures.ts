@@ -37,6 +37,10 @@ export const lectures = collection({
       label: 'Lecture Date',
       validation: { isRequired: true }
     }),
+    readingTime: fields.text({
+      label: 'Reading Time Override',
+      description: 'Optional. For example, "1 min read". Leave blank to calculate automatically.',
+    }),
     links: fields.array(
       fields.object({
         label: fields.text({
