@@ -16,6 +16,7 @@ const lectures = defineCollection({
 			type: z.enum(['slides', 'youtube', 'bilibili', 'other']).default('other'),
 		})).optional(),
 		updatedDate: z.coerce.date().optional(),
+		readingTime: z.string().optional(),
 		coverImageUrl: z.string().optional(),
 		coverImage: image().optional(),
 		category: z.string().optional(),

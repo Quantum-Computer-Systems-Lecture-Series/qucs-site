@@ -32,7 +32,7 @@ const { post, headings, slug } = Astro.props
 const { Content, remarkPluginFrontmatter } = await post.render()
 
 const readingTime = getReadingTime(post.body)
-const minutesRead = readingTime.text
+const minutesRead = post.data.readingTime || readingTime.text
 ---
 
 <BlogPostLayout
