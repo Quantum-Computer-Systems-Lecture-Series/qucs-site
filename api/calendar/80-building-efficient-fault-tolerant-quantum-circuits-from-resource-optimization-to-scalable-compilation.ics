@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:80-building-efficient-fault-tolerant-quantum-circuits-from-resource-optimization-to-scalable-compilation@qucs.info
-DTSTAMP:20260727T150838Z
+DTSTAMP:20260727T151941Z
 DTSTART:20260730T080000
 DTEND:20260730T100000
 SUMMARY:Lec80|Building Efficient Fault-Tolerant Quantum Circuits: From Resource Optimization to Scalable Compilation|Meng Wang-University of British Columbia (UBC)

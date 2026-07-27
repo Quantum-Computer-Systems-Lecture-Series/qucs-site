@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:76-quantum-ai-algorithms-and-applications@qucs.info
-DTSTAMP:20260727T150838Z
+DTSTAMP:20260727T151941Z
 DTSTART:20260612T080000
 DTEND:20260612T100000
 SUMMARY:Lec76|Quantum AI: Algorithms and Applications|Soohyun Park-Sookmyung Women’s University

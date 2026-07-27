@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:79-towards-ultra-high-rate-quantum-error-correction-with-reconfigurable-atom-arrays@qucs.info
-DTSTAMP:20260727T150838Z
+DTSTAMP:20260727T151941Z
 DTSTART:20260718T080000
 DTEND:20260718T100000
 SUMMARY:Lec79|Towards Ultra-High-Rate Quantum Error Correction with Reconfigurable Atom Arrays|Chen Zhao-Eastern Institute of Technology\, Ningbo (EIT Ningbo)

@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:75-syndrome-extraction-circuits-with-near-optimal-depths-for-practical-quantum-error-correcting-code-families@qucs.info
-DTSTAMP:20260727T150838Z
+DTSTAMP:20260727T151941Z
 DTSTART:20260601T080000
 DTEND:20260601T100000
 SUMMARY:Lec75|Syndrome Extraction Circuits with Near-Optimal Depths for Practical Quantum Error Correcting Code Families|Daniel Bochen Tan-Harvard University
