@@ -1,0 +1,57 @@
+---
+title: >-
+  80 | Building Efficient Fault-Tolerant Quantum Circuits: From Resource
+  Optimization to Scalable Compilation
+description: >-
+  This talk presents techniques for reducing T-gate counts, Clifford gate
+  counts, and compilation costs, together with a scalable framework for
+  efficiently compiling large fault-tolerant quantum circuits.
+speaker: Meng Wang
+speakerAffiliation: University of British Columbia (UBC)
+speakerBio: >-
+  Meng Wang is a Ph.D. candidate in Computer Engineering at the University of
+  British Columbia. His research focuses on scalable and efficient quantum
+  computing systems, spanning quantum architecture, compilation, simulation,
+  and fault-tolerant quantum computing. He develops compiler, architecture,
+  and runtime techniques that reduce the cost of executing quantum programs
+  across the computing stack, with a particular emphasis on making large-scale
+  fault-tolerant quantum computation more practical. His research has been
+  published at leading computer architecture conferences, including ISCA, MICRO,
+  and ASPLOS. His recent work focuses on scalable fault-tolerant quantum circuit
+  transpilation, developing techniques to reduce quantum resource overhead while
+  enabling efficient compilation of large quantum circuits for future
+  error-corrected quantum computers.
+lectureDate: 2026-07-30
+links:
+  - label: Join on Zoom
+    url: https://qucs.info/zoom
+    type: other
+category: compilation-and-optimization
+tags:
+  - MengWang
+  - UBC
+  - FaultTolerantQuantumComputing
+  - QuantumCompilation
+  - ResourceOptimization
+visibility: public
+useMathJax: true
+---
+
+## Schedule
+
+- **Date and time:** Thursday, July 30, 2026, 01:00 UTC
+- **Local times:** 09:00 HKT · Wednesday, July 29, 21:00 ET · Wednesday, July 29, 18:00 PT
+
+## Abstract
+
+Fault-tolerant quantum computing (FTQC) promises to enable large-scale quantum applications, but realizing this potential requires highly optimized compilation techniques that efficiently transform quantum circuits into forms suitable for error-corrected hardware. In this talk, I will present my recent research on scalable fault-tolerant quantum circuit compilation, focusing on three major bottlenecks in the compilation pipeline.
+
+First, I will present techniques for reducing T-gate counts, a long-standing optimization target because T gates incur substantial overhead from magic-state preparation in fault-tolerant quantum computing. Next, I will discuss methods for reducing Clifford gate counts. As advances in magic-state preparation continue to lower the relative cost of T gates, Clifford operations are becoming an increasingly significant contributor to the overall resource requirements of fault-tolerant quantum circuits, motivating optimization techniques beyond T-count reduction.
+
+Finally, I will introduce a scalable compilation framework designed for the extremely large circuits encountered in fault-tolerant quantum computing. Instead of representing quantum circuits as directed acyclic graphs (DAGs), the framework uses a table-based representation, enabling several orders of magnitude speedup in compilation while maintaining high-quality optimizations. Together, these techniques reduce the quantum resources required to execute fault-tolerant quantum circuits while substantially accelerating the classical compilation process, bringing practical large-scale fault-tolerant quantum computing closer to reality.
+
+## Speaker Bio
+
+Meng Wang is a Ph.D. candidate in Computer Engineering at the University of British Columbia. His research focuses on scalable and efficient quantum computing systems, spanning quantum architecture, compilation, simulation, and fault-tolerant quantum computing. He develops compiler, architecture, and runtime techniques that reduce the cost of executing quantum programs across the computing stack, with a particular emphasis on making large-scale fault-tolerant quantum computation more practical.
+
+His research has been published at leading computer architecture conferences, including ISCA, MICRO, and ASPLOS. His recent work focuses on scalable fault-tolerant quantum circuit transpilation, developing techniques to reduce quantum resource overhead while enabling efficient compilation of large quantum circuits for future error-corrected quantum computers.
