@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:81-magic-gate-teleportation-structure-useful-resource-states-and-simpler-feedforward@qucs.info
+DTSTAMP:20260727T150838Z
+DTSTART:20260730T080000
+DTEND:20260730T100000
+SUMMARY:Lec81|Magic Gate Teleportation: Structure\, Useful Resource States\, and Simpler Feedforward|Yunzhe Zheng-Yale University
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum gate teleportation is a key technique in fault-tolerant quantum computation that uses resource states to implement logical gates. Here\, we develop a theory of quantum gate teleportation protocols that implement non-Clifford gates on arbitrary input states without revealing any information about them\; we refer to these protocols as magic gate teleportation (MGT).\n\nWe uncover a hidden structure within MGT: after backpropagating the Pauli measurements\, MGT protocols can be viewed as encoding the input state into a stabilizer code heralded by the measurement outcomes\, followed by a logical non-Clifford gate. Using this structure\, we construct MGT protocols for any resource state obtained by applying commuting Pauli rotations to a stabilizer state\, and provide an efficient algorithm for synthesizing their circuit implementations.\n\nConversely\, we prove that useful resource states for MGT\, i.e.\, states that can be used for non-Clifford gates through MGT protocols\, are necessarily Clifford-equivalent to diagonal states\; in particular\, the output state distilled from the [5\,1\,3] protocol is not useful for MGT. Finally\, we identify conditions under which the feedforward operators can be implemented by Pauli operators\, shedding light on the paradigm of algorithmic fault tolerance and simplifying the feedforward operations needed for quantum computing.
+URL:https://qucs.info/lectures/81-magic-gate-teleportation-structure-useful-resource-states-and-simpler-feedforward
+END:VEVENT
+END:VCALENDAR

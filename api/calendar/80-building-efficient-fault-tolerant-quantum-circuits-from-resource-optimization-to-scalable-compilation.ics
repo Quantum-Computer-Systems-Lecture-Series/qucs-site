@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:80-building-efficient-fault-tolerant-quantum-circuits-from-resource-optimization-to-scalable-compilation@qucs.info
+DTSTAMP:20260727T150838Z
+DTSTART:20260730T080000
+DTEND:20260730T100000
+SUMMARY:Lec80|Building Efficient Fault-Tolerant Quantum Circuits: From Resource Optimization to Scalable Compilation|Meng Wang-University of British Columbia (UBC)
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Fault-tolerant quantum computing (FTQC) promises to enable large-scale quantum applications\, but realizing this potential requires highly optimized compilation techniques that efficiently transform quantum circuits into forms suitable for error-corrected hardware. In this talk\, I will present my recent research on scalable fault-tolerant quantum circuit compilation\, focusing on three major bottlenecks in the compilation pipeline.\n\nFirst\, I will present techniques for reducing T-gate counts\, a long-standing optimization target because T gates incur substantial overhead from magic-state preparation in fault-tolerant quantum computing. Next\, I will discuss methods for reducing Clifford gate counts. As advances in magic-state preparation continue to lower the relative cost of T gates\, Clifford operations are becoming an increasingly significant contributor to the overall resource requirements of fault-tolerant quantum circuits\, motivating optimization techniques beyond T-count reduction.\n\nFinally\, I will introduce a scalable compilation framework designed for the extremely large circuits encountered in fault-tolerant quantum computing. Instead of representing quantum circuits as directed acyclic graphs (DAGs)\, the framework uses a table-based representation\, enabling several orders of magnitude speedup in compilation while maintaining high-quality optimizations. Together\, these techniques reduce the quantum resources required to execute fault-tolerant quantum circuits while substantially accelerating the classical compilation process\, bringing practical large-scale fault-tolerant quantum computing closer to reality.
+URL:https://qucs.info/lectures/80-building-efficient-fault-tolerant-quantum-circuits-from-resource-optimization-to-scalable-compilation
+END:VEVENT
+END:VCALENDAR
