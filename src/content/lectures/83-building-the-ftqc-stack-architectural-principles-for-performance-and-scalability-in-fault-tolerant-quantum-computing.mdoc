@@ -1,0 +1,52 @@
+---
+title: >-
+  83 | Building the FTQC Stack: Architectural Principles for Performance and
+  Scalability in Fault-Tolerant Quantum Computing
+description: >-
+  This talk presents systems-level architectural principles and compiler
+  techniques for improving cycle time, reducing cycles per gate, and lowering
+  gate count in scalable fault-tolerant quantum computing.
+speaker: Swamit Tannu
+speakerAffiliation: University of Wisconsin–Madison
+speakerBio: >-
+  Swamit Tannu is an Assistant Professor in the Computer Sciences Department at
+  the University of Wisconsin–Madison, where he leads the QUEST lab. His
+  research interests include computer architecture and quantum computing.
+  Swamit's research focuses on developing architectural and systems
+  abstractions for quantum computers. Swamit received the NSF CAREER award, the
+  Stamatis Vassiliadis best paper award at Computing Frontiers, and was
+  inducted in the MICRO Hall of Fame. Before joining the University of
+  Wisconsin–Madison, Swamit received his Ph.D. (2020) and M.S. (2018), both in
+  Electrical and Computer Engineering from Georgia Tech.
+lectureDate: 2026-08-18T01:00:00Z
+links:
+  - label: Join on Zoom
+    url: https://qucs.info/zoom
+    type: other
+category: systems-and-architecture
+tags:
+  - SwamitTannu
+  - UWMadison
+  - FaultTolerantQuantumComputing
+  - QuantumArchitecture
+  - QuantumSystems
+visibility: public
+useMathJax: true
+---
+
+## Schedule
+
+- **Date and time:** Tuesday, August 18, 2026, 01:00 UTC
+- **Local times:** 09:00 HKT · Monday, August 17, 21:00 EDT · Monday, August 17, 20:00 CDT · Monday, August 17, 18:00 PDT
+
+## Abstract
+
+Fault-tolerant quantum computing (FTQC) promises computational capabilities far beyond what noisy intermediate-scale devices can achieve, but realizing this promise demands more than a working error-correction code — it requires a full systems stack engineered for performance. The fundamental challenge is captured in a simple equation: Execution Time = Cycle Time × Cycles per Gate × Number of Gates. Each term conceals a distinct class of architectural and compiler bottlenecks that, left unaddressed, will prevent FTQC systems from scaling to practically meaningful problem sizes.
+
+This talk presents a line of work that attacks all three terms simultaneously. For cycle time, we developed hardware-efficient readout and inference architectures for both superconducting and neutral-atom platforms that tighten the quantum error-correction loop without sacrificing fidelity. For cycles per gate, we identified and resolved hidden parallelism bottlenecks — synchronization overhead from cycle-count drift, leakage-induced syndrome corruption, and bursty decoding latency — through co-designed control, classification, and virtualized decoding infrastructure. For gate count, we developed direct unitary synthesis techniques and compiler generation methods that cut T-gate and Clifford counts at the source, reducing the dominant fault-tolerant resource before it ever reaches the hardware.
+
+Taken together, these contributions reframe FTQC not as an abstract fault-tolerance model but as a realizable systems engineering challenge — one that demands the same discipline in capacity planning, resource scheduling, and compiler design that has shaped classical computer architecture. I will discuss the unifying design principles behind this work, practical adoption by industry partners, and open problems that remain on the path to scalable FTQC.
+
+## Speaker Bio
+
+Swamit Tannu is an Assistant Professor in the Computer Sciences Department at the University of Wisconsin–Madison, where he leads the QUEST lab. His research interests include computer architecture and quantum computing. Swamit's research focuses on developing architectural and systems abstractions for quantum computers. Before joining the University of Wisconsin–Madison, Swamit received his Ph.D. (2020) and M.S. (2018), both in Electrical and Computer Engineering from Georgia Tech.
