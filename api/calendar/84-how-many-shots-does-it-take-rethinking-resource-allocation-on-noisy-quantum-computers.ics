@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:84-how-many-shots-does-it-take-rethinking-resource-allocation-on-noisy-quantum-computers@qucs.info
+DTSTAMP:20260913T164417Z
+DTSTART:20260909T080000
+DTEND:20260909T100000
+SUMMARY:Lec84|How Many Shots Does It Take? Rethinking Resource Allocation on Noisy Quantum Computers|Prateek P. Kulkarni-Indian Institute of Science (IISc)
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum algorithms require repeated circuit executions\, or shots\, to obtain reliable results — but how many shots are actually enough? In this talk\, I will present our ISLPED 2026 work on noise-aware quantum resource allocation. We develop an analytical framework for estimating the shots required for reliable execution based on circuit and hardware characteristics\, and extend it to optimally allocate a fixed shot budget across circuit partitions.\n\nOn real quantum hardware\, our approach reduces required shots by about 58%\, energy consumption by up to 62%\, and estimation error by up to 73%. More broadly\, I will discuss why treating shots as a hardware-aware resource can make near-term quantum execution substantially more efficient.
+URL:https://qucs.info/lectures/84-how-many-shots-does-it-take-rethinking-resource-allocation-on-noisy-quantum-computers
+END:VEVENT
+END:VCALENDAR

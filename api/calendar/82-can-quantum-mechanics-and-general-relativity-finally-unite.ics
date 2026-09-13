@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:82-can-quantum-mechanics-and-general-relativity-finally-unite@qucs.info
+DTSTAMP:20260913T164417Z
+DTSTART:20260812T080000
+DTEND:20260812T100000
+SUMMARY:Lec82|Can Quantum Mechanics and General Relativity Finally Unite?|Vlatko Vedral-University of Oxford
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:I intend to present a range of experiments to probe the domain of overlap of quantum physics and general relativity. My claim will be that we are now technologically ready to perform definitive tests of the quantum nature of the gravitational field. Moreover\, and this is a minority view\, I will explain why I believe that there are no a priori fundamental problems with unifying quantum physics and general relativity. Of course\, how we should proceed to do so will depend on the outcomes of the outlined experiments\, and I will sketch a few main directions in which this could unfold.
+URL:https://qucs.info/lectures/82-can-quantum-mechanics-and-general-relativity-finally-unite
+END:VEVENT
+END:VCALENDAR
