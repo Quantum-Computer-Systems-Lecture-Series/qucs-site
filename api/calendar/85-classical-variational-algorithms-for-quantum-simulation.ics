@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:85-classical-variational-algorithms-for-quantum-simulation@qucs.info
+DTSTAMP:20261030T103133Z
+DTSTART:20260928T080000
+DTEND:20260928T100000
+SUMMARY:Lec85|Classical Variational Algorithms for Quantum Simulation|Refik Mansuroglu-University of Vienna
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:Quantum simulation is the most natural application of quantum computation\, yet noisy quantum hardware still renders large-scale demonstrations challenging. In this talk\, I present classical pre-processing routines that yield short-depth compilations for the two central building blocks of quantum simulation: initial state preparation and Trotter decomposition.\n\nThe former relies on a variational disentangling scheme for matrix product states (MPS)\, the latter on classical approximations of the Trotter error of parametrized circuits. Together\, these routines enable optimized\, short-depth circuit compilations that bring near-term quantum simulation demonstrations closer to reach.
+URL:https://qucs.info/lectures/85-classical-variational-algorithms-for-quantum-simulation
+END:VEVENT
+END:VCALENDAR

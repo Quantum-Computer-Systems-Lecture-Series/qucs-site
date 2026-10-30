@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuCS Info//Lecture Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:87-invariant-generation-for-quantum-program-verification@qucs.info
+DTSTAMP:20261030T103133Z
+DTSTART:20261030T080000
+DTEND:20261030T100000
+SUMMARY:Lec87|Invariant Generation for Quantum Program Verification|Mingsheng Ying-University of Technology Sydney
+LOCATION:https://tinyurl.com/gucs-zoom
+DESCRIPTION:As quantum hardware advances from prototypes to practical platforms\, reliable software becomes increasingly critical. Verification is indispensable for ensuring the correctness\, safety\, and security of quantum software. Program invariants play a key role in program verification.\n\nIn this talk\, we introduce the notion of invariants for quantum programs and present an effective technique for invariant generation\, enabling the verification and analysis of quantum programs.
+URL:https://qucs.info/lectures/87-invariant-generation-for-quantum-program-verification
+END:VEVENT
+END:VCALENDAR

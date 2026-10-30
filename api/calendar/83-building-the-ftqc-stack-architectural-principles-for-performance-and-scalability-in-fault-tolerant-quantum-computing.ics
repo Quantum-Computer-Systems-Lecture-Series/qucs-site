@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:83-building-the-ftqc-stack-architectural-principles-for-performance-and-scalability-in-fault-tolerant-quantum-computing@qucs.info
-DTSTAMP:20260913T164417Z
+DTSTAMP:20261030T103133Z
 DTSTART:20260818T080000
 DTEND:20260818T100000
 SUMMARY:Lec83|Building the FTQC Stack: Architectural Principles for Performance and Scalability in Fault-Tolerant Quantum Computing|Swamit Tannu-University of Wisconsin–Madison

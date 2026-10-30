@@ -4,7 +4,7 @@ PRODID:-//QuCS Info//Lecture Calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:84-how-many-shots-does-it-take-rethinking-resource-allocation-on-noisy-quantum-computers@qucs.info
-DTSTAMP:20260913T164417Z
+DTSTAMP:20261030T103133Z
 DTSTART:20260909T080000
 DTEND:20260909T100000
 SUMMARY:Lec84|How Many Shots Does It Take? Rethinking Resource Allocation on Noisy Quantum Computers|Prateek P. Kulkarni-Indian Institute of Science (IISc)
